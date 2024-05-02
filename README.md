@@ -21,7 +21,7 @@ Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 ## Licence Agreement
 
-Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0)
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0)
 
 ## Requirements
 
@@ -58,13 +58,13 @@ Alias /tinypass/ /where/ever/you/want/tinypass/
 </Directory>
 ```
 
-	Test Config
-sudo apachectl configtest;
+Test Config
+	sudo apachectl configtest;
 
-	Reload Config
-sudo systemctl reload apache2;
+Reload Config
+	sudo systemctl reload apache2;
 
-	Test Status
-sudo systemctl status apache2;
+Test Status
+	sudo systemctl status apache2;
 
 - Open a browser to https://www.your.host/tinypass/
