@@ -42,10 +42,10 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Publi
 - Copy the contents to your webdirectory
 - Configure your webserver (Apache2 example)
 
+```
 RewriteRule ^/tinypass$ /tinypass/ [R,L]
 Alias /tinypass/ /where/ever/you/want/tinypass/
 
---------------------------------------------
 <Directory /where/ever/you/want/tinypass>
 	Options MultiViews SymLinksIfOwnerMatch
 
@@ -56,7 +56,7 @@ Alias /tinypass/ /where/ever/you/want/tinypass/
 	AllowOverride All
 	Require all granted
 </Directory>
---------------------------------------------
+```
 
 	Test Config
 sudo apachectl configtest;
