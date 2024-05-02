@@ -5,6 +5,25 @@ Password Manager with SQLite DB and 100% Custom Fields
 Tiny Pass is how Password Managers should be. No installation hassle, no database server, tables & data setup, no websetup as it does all these things automatically.
 Copy the contents to your webdirectory, configure your webserver and open a browser to e.g. https://bla/tinypass/ and change the default user passwords when prompted.
 
+Functionality
+
+- Groups
+- Multi User
+- Simple Usage
+- Search Engine
+- Custom Fields
+- Reorder Fields
+- CSV Import/Export
+- Built-in SQLite DB
+- Password Encryption
+
+Tiny Pass works with "secrets" holding "Custom Fields". When creating or editing secrets you can add, change, reorder or remove custom fields (of different field types).
+Secrets can be a member of a "Group" and the Interface has powerful Search Engine that can search "Secrets" and "Custom Field" contents optionally filtered by the Group.
+You can sort all columns in ascending and descending order and it allows you to mass select multiple "Secret", "User" or "Group" records to be Deleted or CSV Exported
+By default there are two users called user: "admin" (with role: "Admin") and user: "tiny" (with role: "User"). Only Admins are allowed to add, change or remove users.
+Tiny Pass is CSV Import / Export compatible with more than 10 different Password Managers including different browsers and other widely used well known Password Managers.
+Tiny Pass AES-256-CTR en/decrypt all "Password" fields with a SHA512 hash-key of your user password that is written nowhere, so be sure to remember your User Password!  
+
 Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
