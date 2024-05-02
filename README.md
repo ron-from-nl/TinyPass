@@ -59,12 +59,21 @@ Alias /tinypass/ /where/ever/you/want/tinypass/
 ```
 
 Test Config
-	sudo apachectl configtest;
+
+```
+sudo apachectl configtest;
+```
 
 Reload Config
-	sudo systemctl reload apache2;
+
+```
+sudo systemctl reload apache2;
+```
 
 Test Status
-	sudo systemctl status apache2;
+
+```
+sudo systemctl status apache2;
+```
 
 - Open a browser to https://www.your.host/tinypass/
