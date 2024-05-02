@@ -1,0 +1,83 @@
+.service-tooltip 										{ display: inline; position: relative; z-index: 999; }
+.service-tooltip h2 									{ font-size: x-large; }
+.service-tooltip-item 									{ cursor: pointer; display: inline-block; }
+.service-tooltip-item::after 							{ content: ''; position: absolute;	padding: 10px; height: 20px; bottom: 100%; pointer-events: none; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.service-tooltip:hover .service-tooltip-item::after 	{ pointer-events: auto; }
+.service-tooltip-content
+{
+	position: absolute;
+	z-index: 9999;
+	width: 20rem;
+	top: -10%;
+	left: 100%;
+	padding: 1rem;
+	text-align: justify;
+  	text-justify: inter-word;
+	font-size: small;
+	line-height: 1.4;
+	box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
+	color: white;
+	background: rgba(0,0,0,0.9);
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+.service-tooltip-effect-1 .service-tooltip-content { -webkit-transform: translate3d(0,-10px,0); transform: translate3d(0,-10px,0); -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, transform 0.3s; }
+.service-tooltip-effect-2 .service-tooltip-content {
+	-webkit-transform-origin: 50% calc(100% + 10px);
+	transform-origin: 50% calc(100% + 10px);
+	-webkit-transform: perspective(1000px) rotate3d(1,0,0,45deg);
+	transform: perspective(1000px) rotate3d(1,0,0,45deg);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.service-tooltip-effect-3 .service-tooltip-content { -webkit-transform: translate3d(0,10px,0) rotate3d(1,1,0,25deg); transform: translate3d(0,10px,0) rotate3d(1,1,0,25deg); -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, transform 0.3s; }
+.service-tooltip-effect-4 .service-tooltip-content
+{
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform: scale3d(0.7,0.3,1);
+	transform: scale3d(0.7,0.3,1);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.service-tooltip-effect-5 .service-tooltip-content
+{
+	width: 180px;
+	margin-left: -90px;
+	-webkit-transform-origin: 50% calc(100% + 6em);
+	transform-origin: 50% calc(100% + 6em);
+	-webkit-transform: rotate3d(0,0,1,15deg);
+	transform: rotate3d(0,0,1,15deg);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+	-webkit-transition-timing-function: ease, cubic-bezier(.17,.67,.4,1.39);
+	transition-timing-function: ease, cubic-bezier(.17,.67,.4,1.39);
+}
+
+.service-tooltip:hover .service-tooltip-content { pointer-events: auto; opacity: 1; -webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0); transform: translate3d(0,0,0) rotate3d(0,0,0,0); }
+.service-tooltip.service-tooltip-effect-2:hover .service-tooltip-content { -webkit-transform: perspective(1000px) rotate3d(1,0,0,0deg); transform: perspective(1000px) rotate3d(1,0,0,0deg); }
+.service-tooltip-content::after
+{
+/* Arrow */
+	content: '';
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-top-color: #2a3035;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.service-tooltip-content img { position: relative; height: 100px; display: block;	margin: 1rem 1rem 1rem 0rem; }
+.service-tooltip-text { font-size: small; line-height: 1.35; display: block; padding: 0rem 0rem 0rem 0rem; color: #fff; }
+.service-tooltip-effect-5 .service-tooltip-text { padding: 1.4em; }
+.service-tooltip-text a { font-weight: bold; }
