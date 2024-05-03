@@ -80,6 +80,12 @@ Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0)
 - Configure your webserver (Apache2 example)
 
 ```
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+
+Add the following example section (edit alias and directory)
+
+```
 RewriteRule ^/tinypass$ /tinypass/ [R,L]
 Alias /tinypass/ /where/ever/you/want/tinypass/
 
