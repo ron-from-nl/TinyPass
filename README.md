@@ -76,7 +76,12 @@ Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 ## Installation
 
-- Copy the contents to your webdirectory
+- Copy TinyPass to your web-directory (example dir "/var/www/html/")
+
+```
+git clone https://github.com/ron-from-nl/TinyPass.git /var/www/html
+```
+
 - Configure your webserver (Apache2 example)
 
 ```
