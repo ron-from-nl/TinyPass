@@ -80,9 +80,11 @@ Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 ```
 sudo -u www-data mkdir -v "/var/www/html/tinypass";
+```
 
-# or automatically to a subdir of your real DocumentRoot as the user running Apache2
+or create dir automatically to a subdir of your real DocumentRoot as the user running Apache2
 
+```
 sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" mkdir -v "$(sudo apachectl -S | grep "DocumentRoot" | awk -F"\"" '{ print $2 }')tinypass";
 ```
 
@@ -90,9 +92,11 @@ sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" mkdir -v "$(
 
 ```
 sudo -u www-data git clone https://github.com/ron-from-nl/TinyPass.git "/var/www/html/tinypass";
+```
 
-# or automatically to a subdir of your real DocumentRoot as the user running Apache2
+or copy automatically to a subdir of your real DocumentRoot as the user running Apache2
 
+```
 sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" git clone https://github.com/ron-from-nl/TinyPass.git "$(sudo apachectl -S | grep "DocumentRoot" | awk -F"\"" '{ print $2 }')tinypass";
 ```
 
