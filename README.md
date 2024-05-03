@@ -58,7 +58,7 @@ Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 ## Licence Agreement
 
-Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0)
+[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0 LEGAL CODE)](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)
 
 ## Requirements
 
