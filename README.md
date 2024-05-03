@@ -26,11 +26,19 @@ Tiny Pass AES-256-CTR en/decrypt all "Password" fields with a SHA512 hash-key of
 
 ## Screenshots
 
+Login
+
 ![Login](/img/01-tinypass.png?raw=true "Login")
+
+Show Secrets
 
 ![Show Secrets](/img/02-tinypass.png?raw=true "Show Secrets")
 
+View Secret
+
 ![View Secret](/img/03-tinypass.png?raw=true "View Secret")
+
+Edit Secret
 
 ![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
 
