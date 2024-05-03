@@ -24,6 +24,11 @@ By default there are two users called user: "admin" (with role: "Admin") and use
 Tiny Pass is CSV Import / Export compatible with more than 10 different Password Managers including different browsers and other widely used well known Password Managers.
 Tiny Pass AES-256-CTR en/decrypt all "Password" fields with a SHA512 hash-key of your user password that is written nowhere, so be sure to remember your User Password!  
 
+![Login](/img/01-tinypass.png?raw=true "Login")
+![Show Secrets](/img/02-tinypass.png?raw=true "Show Secrets")
+![View Secret](/img/03-tinypass.png?raw=true "View Secret")
+![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
+
 Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
