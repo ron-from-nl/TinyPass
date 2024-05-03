@@ -76,10 +76,24 @@ Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 ## Installation
 
-- Copy TinyPass to your web-directory (example dir "/var/www/html/")
+- Create a directory to copy TinyPass into (as web-server user into your \[DocumentRoot\]/tinypass/ e.g. "/var/www/html/tinypass")
 
 ```
-git clone https://github.com/ron-from-nl/TinyPass.git /var/www/html
+sudo -u www-data mkdir -v "/var/www/html/tinypass";
+
+# or automatically to your real DocumentRoot subdir
+
+sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" mkdir -v "$(sudo apachectl -S | grep "DocumentRoot" | awk -F"\"" '{ print $2 }')tinypass";
+```
+
+- Copy TinyPass to your web-directory (example dir "/var/www/html/tinypass")
+
+```
+sudo -u www-data git clone https://github.com/ron-from-nl/TinyPass.git "/var/www/html/tinypass";
+
+# or automatically to your real DocumentRoot subdir
+
+sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" git clone https://github.com/ron-from-nl/TinyPass.git "$(sudo apachectl -S | grep "DocumentRoot" | awk -F"\"" '{ print $2 }')tinypass";
 ```
 
 - Configure your webserver (Apache2 example)
