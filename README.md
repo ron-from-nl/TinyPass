@@ -35,41 +35,25 @@ TinyPass is very fast also works well on mobiles and tablets.
 
 ## Desktop Screenshots
 
-Login                                                          |  Show Secrets
-:-------------------------------------------------------------:|:-------------------------------------------------------------:
-![Login](/img/01-tinypass.png?raw=true "Login")                |  ![Show Secrets](/img/02-tinypass.png?raw=true "Show Secrets")
+Login                                                           |  Show Secrets
+:--------------------------------------------------------------:|:-------------------------------------------------------------:
+![Login](/img/01-tinypass.png?raw=true "Login")                 |  ![Show Secrets](/img/02-tinypass.png?raw=true "Show Secrets")
 
-View Secret                                                    |  Edit Secret
-:-------------------------------------------------------------:|:-------------------------------------------------------------:
-![View Secret](/img/03-tinypass.png?raw=true "View Secret")    |  ![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
+View Secret                                                     |  Edit Secret
+:--------------------------------------------------------------:|:-------------------------------------------------------------:
+![View Secret](/img/03-tinypass.png?raw=true "View Secret")     |  ![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
 
 
 ## Mobile Screenshots
 
-Login                                                          |  Show Secrets                                                 |View Secret                                                    |  Edit Secret                                                  |
-:-------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-![Login](/img/05-tinypass.jpg?raw=true "Login")                |  ![Show Secrets](/img/06-tinypass.jpg?raw=true "Show Secrets")|![View Secret](/img/07-tinypass.jpg?raw=true "View Secret")    |  ![Edit Secret](/img/08-tinypass.jpg?raw=true "Edit Secret")  |
+Login                                                           |  Show Secrets                                                 |Show Secrets Menu                                              
+:--------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:
+![Login](/img/05-tinypass.jpg?raw=true "Login")                 |  ![Show Secrets](/img/06-tinypass.jpg?raw=true "Show Secrets")|![View Secret](/img/07-tinypass.jpg?raw=true "View Secret")    
 
+|  View Secret                                                  |  Edit Secret                                                  |
+|:-------------------------------------------------------------:|:-------------------------------------------------------------:|
+|  ![Edit Secret](/img/08-tinypass.jpg?raw=true "Edit Secret")  |  ![Edit Secret](/img/09-tinypass.jpg?raw=true "Edit Secret")  |
 
-Login
-
-![Login](/img/05-tinypass.jpg?raw=true "Login")
-
-Show Secrets
-
-![Show Secrets](/img/06-tinypass.jpg?raw=true "Show Secrets")
-
-View Secret
-
-![View Secret](/img/07-tinypass.jpg?raw=true "View Secret")
-
-Edit Secret
-
-![Edit Secret](/img/08-tinypass.jpg?raw=true "Edit Secret")
-
-Edit Secret
-
-![Edit Secret](/img/09-tinypass.jpg?raw=true "Edit Secret")
 
 Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
