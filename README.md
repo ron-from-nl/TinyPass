@@ -31,7 +31,7 @@ You can sort all columns in ascending and descending order and it allows you to 
 By default there are two users called user: "admin" (with role: "Admin") and user: "tiny" (with role: "User"). Only Admins are allowed to add, change or remove users.
 Tiny Pass is CSV Import / Export compatible with more than 10 different Password Managers including different browsers and other widely used well known Password Managers.
 Tiny Pass AES-256-CTR en/decrypt all "Password" fields with a SHA512 hash-key of your user password that is written nowhere, so remember your User Password!
-Further TinyPass is designed to perform fast and also look good on mobiles. 
+TinyPass is fast also look good on mobiles and tablets. 
 
 ## Screenshots
 
