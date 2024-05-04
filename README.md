@@ -35,36 +35,21 @@ TinyPass is very fast also works well on mobiles and tablets.
 
 ## Desktop Screenshots
 
-Login
+Login                                                          |  Show Secrets
+:-------------------------------------------------------------:|:-------------------------------------------------------------:
+![Login](/img/01-tinypass.png?raw=true "Login")                |  ![Show Secrets](/img/02-tinypass.png?raw=true "Show Secrets")
 
-<img src="/img/01-tinypass.png?raw=true" width="45%" height="auto"/>
+View Secret                                                    |  Edit Secret
+:-------------------------------------------------------------:|:-------------------------------------------------------------:
+![View Secret](/img/03-tinypass.png?raw=true "View Secret")    |  ![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
 
-Login2
-
-<img src="/img/02-tinypass.png?raw=true" width="45%" height="auto"/>
-
-Solarized dark                                   |  Solarized Ocean
-:-----------------------------------------------:|:------------------------------------------------:
-![Login](/img/01-tinypass.png?raw=true "Login")  |  ![Login](/img/01-tinypass.png?raw=true "Login")
-
-
-Login | Login
-
-![Login](/img/01-tinypass.png?raw=true "Login") | ![Login](/img/01-tinypass.png?raw=true "Login")
-
-Show Secrets
-
-![Show Secrets](/img/02-tinypass.png?raw=true "Show Secrets")
-
-View Secret
-
-![View Secret](/img/03-tinypass.png?raw=true "View Secret")
-
-Edit Secret
-
-![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
 
 ## Mobile Screenshots
+
+Login                                                          |  Show Secrets                                                 |View Secret                                                    |  Edit Secret                                                  |
+:-------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:|
+![Login](/img/05-tinypass.jpg?raw=true "Login")                |  ![Show Secrets](/img/06-tinypass.jpg?raw=true "Show Secrets")|![View Secret](/img/07-tinypass.jpg?raw=true "View Secret")    |  ![Edit Secret](/img/08-tinypass.jpg?raw=true "Edit Secret")  |
+
 
 Login
 
