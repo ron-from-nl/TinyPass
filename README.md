@@ -67,7 +67,7 @@ Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 ## Website
 
-[Part of Tiny Server](https://tiny-server.com/)
+[Developed by Tiny Server](https://tiny-server.com/)
 
 ## Licence Agreement
 
