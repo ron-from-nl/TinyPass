@@ -35,6 +35,8 @@ TinyPass is very fast also works well on mobiles and tablets.
 
 ## Desktop Screenshots
 
+<img src="/img/01-tinypass.png?raw=true" width="100" height="100"/>
+
 Login
 
 ![Login](/img/01-tinypass.png?raw=true "Login")
