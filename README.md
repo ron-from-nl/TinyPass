@@ -43,9 +43,9 @@ Login2
 
 <img src="/img/02-tinypass.png?raw=true" width="45%" height="auto"/>
 
-Login
+Login | Login
 
-![Login](/img/01-tinypass.png?raw=true "Login")
+![Login](/img/01-tinypass.png?raw=true "Login") | ![Login](/img/01-tinypass.png?raw=true "Login")
 
 Show Secrets
 
