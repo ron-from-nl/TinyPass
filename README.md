@@ -2,6 +2,10 @@
 
 Password Manager with SQLite DB and 100% Custom Fields
 
+URL:			https://www.tiny-server.com/
+Email:			Ron de Jong <ronuitzaandam@gmail.com>
+Author:			Tiny Server, Ron de Jong, The Netherlands
+
 Tiny Pass is how Password Managers should be. No installation hassle, no database server to install and run, no database & user access rights to create or manual paths and URLs to specify.
 There's not even a websetup that you have to go through. TinyPass does all that technical Mumbo Jumbo silently by itself when there's no tinypass.db file in it's home directory at first run.
 
