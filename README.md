@@ -2,8 +2,16 @@
 
 Password Manager with SQLite DB and 100% Custom Fields
 
-Tiny Pass is how Password Managers should be. No installation hassle, no database server, tables & data setup, no websetup as it does all these things automatically.
-Copy the contents to your webdirectory, configure your webserver and open a browser to e.g. https://bla/tinypass/ and change the default user passwords when prompted.
+Tiny Pass is how Password Managers should be. No installation hassle, no database server to install and run, no database & user access rights to create or manual paths and URLs to specify.
+There's not even a websetup that you have to go through. TinyPass does all that technical Mumbo Jumbo silently by itself when there's no tinypass.db file in it's home directory at first run.
+
+Copy the TinyPass to your directory of choice
+Configure your Web Server (for instance Apache2)
+Open a browser to e.g. https://your.host/tinypass/
+Change the user passwords when TinyPass prompts you
+Login to TinyPass and play with a bunch of Demo Secrets 
+
+The beauty of TinyPass is that every Secret holds any number of Custom Fields of different Field Types. Custom Fields can be Added, Changed, Reordered Up and Down or Deleted at any time.  
 
 Functionality
 
