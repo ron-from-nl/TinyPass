@@ -11,7 +11,7 @@ There's not even a websetup that you have to go through. TinyPass does all that 
 - Change the user passwords when TinyPass prompts you
 - Login to TinyPass and play with a bunch of Demo Secrets 
 
-The beauty of TinyPass is that every Secret holds any number of Custom Fields of different Field Types. Custom Fields can be Added, Changed, Reordered Up and Down or Deleted at any time.  
+The beauty of TinyPass is that every Secret holds any number of Custom Fields of different Field Types. Custom Fields can be Added, Changed, Reordered Up and Down and Deleted at any time and many other nice features
 
 Functionality
 
