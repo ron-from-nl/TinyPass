@@ -25,9 +25,9 @@ Functionality
 - Built-in SQLite DB
 - Password Encryption
 
-Tiny Pass works with "Secrets" holding "Custom Fields". When creating or editing Secrets you can add, change, reorder or remove Custom Fields (of different Field Types).
-Secrets can be a member of a "Group" and the Interface has powerful Search Engine that can search "Secrets" and "Custom Field" contents optionally filtered by the Group.
-You can sort all columns in ascending and descending order and it allows you to mass select multiple "Secret", "User" or "Group" records to be Deleted or CSV Exported
+Tiny Pass works with "Secrets" holding "Custom Fields" as said before. Secrets can be a member of a "Group" that is selected or simply specified when it does not exist. 
+The Interface has a powerful Search Engine that deeply searches "Secrets" and "Custom Fields" optionally filtered by Group allowing (SQLite "LIKE" wildcards "_" and "%".
+You can sort all columns in ascending and descending order and it allows you to mass select multiple "Secret", "User" or "Group" records to be Deleted or CSV Exported.
 By default there are two users called user: "admin" (with role: "Admin") and user: "tiny" (with role: "User"). Only Admins are allowed to add, change or remove users.
 Tiny Pass is CSV Import / Export compatible with more than 10 different Password Managers including different browsers and other widely used well known Password Managers.
 Tiny Pass AES-256-CTR en/decrypt all "Password" fields with a SHA512 hash-key of your user password that is written nowhere, so be sure to remember your User Password!  
