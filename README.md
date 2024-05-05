@@ -99,7 +99,6 @@ Password fields are AES-256-CTR encrypted in the database with a SHA512 hash key
 
 TinyPass is designed with performance in mind and also supports mobile screens.
 
-| :------------ |:---------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Subject       | Password fields are AES-256-CTR encrypted in the database with a SHA512 hash key of your user password (not written anywhere), so remember your password! |
 
 ## User Licence
