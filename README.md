@@ -46,8 +46,15 @@ The great thing about TinyPass is that it has a clean, non-distracting interface
 
 ### Secrets
 
-TinyPass works with "Secrets" having any number of "Custom Fields" of type: URL, Mail, Pass (encrypted), Text, Note (multi-line).
-Security is critical so all Pass(word) fields are AES-256-CTR written encrypted in the database with a SHA512 hash key of your user password that is not written anywhere, so remember your password!
+TinyPass works with "Secrets" having any number of "Custom Fields" Every Secret has a Name and optionally is a member of a Group. Every new Secret starts with no Fields at all.
+Simply add or remove any number of Custom Fields that you need for your Secret and rearrange the order in which they should appear within your Secret.
+
+### Fields
+
+TinyPass Secrets can have any number of Custom Fields of Type: URL, Mail, Pass, Text, Note (multi-line textarea) giving you exactly the Fields you need for your Secrets.
+Traditional Password Managers work with Fixed Fields supplemented with a limited number of Custom Fields. This often causes missing or redundant fields in your Secrets.
+The Fixed Field problem even gets worse when the user is offered a large list of Secret Types (with predefined fields) making it even more laborious to create secrets.
+TinyPass was designed to revolutionise Fixed Field Password Managers and come up with 100% Custom Fields system making unnecessary or missing Fields a thing of the past.
 
 ### Groups
 
@@ -75,6 +82,10 @@ When a user performs a Password Change, then all Password Fields are re-encrypte
 
 TinyPass supports CSV Import / Export (with automatic format recognition) and compatible with more than 10 different password managers, including various browsers and other well-known formats.
 The group filter is also useful here, allowing you to export only Secrets being a member of a certain Group for instance when using Groups as names of people for whom you keep Secrets.
+
+### Security
+
+Password fields are AES-256-CTR encrypted in the database with a SHA512 hash key of your user password (not written anywhere), so remember your password!
 
 ### Other
 
