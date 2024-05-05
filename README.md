@@ -49,8 +49,8 @@ It also has a clean, non-distracting interface with a context driven menu also s
 
 ### Secrets
 
-TinyPass works with "Secrets" with any number of Fields. New Secrets start out with just a Name and an optional Group.
-Then add, change or remove any number of Fields you need and rearrange their order up and down.
+TinyPass works with "Secrets" holding any number of Fields. New Secrets start with just a Name and an optional Group.
+Then add, change or remove just the Fields you need and rearrange their order as you wish.
 
 Traditional Password Managers work with Fixed Fields often supplemented with a limited number of Custom Fields. This often causes unused and missing fields in your Secrets.
 Fixed Field Password Managers often complicate things further offering a large selection-list of predefined Secrets (secrets with predefined fields) making things more laborious.
