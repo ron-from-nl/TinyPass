@@ -52,7 +52,7 @@ Then you can add, change or remove any number of Fields you need and rearrange t
 
 Traditional Password Managers work with Fixed Fields sometimes supplemented with a limited number of Custom Fields. This often causes unused and missing fields in your Secrets.
 Fixed Field Password Managers often complicate things by offering a large selection list of Secret Types (secrets with predefined sets of fields) making the usage more laborious.
-TinyPass breaks with the Fixed Field tradition of Password Managers offering a 100% Custom Fields making unnecessary and missing Fields and predefined fields a thing of the past.
+TinyPass breaks with the Fixed Field tradition with 100% Custom Fields making unnecessary and/or missing Fields and large selection list of predefined Secrets a thing of the past.
 
 ### Fields
 
