@@ -26,7 +26,7 @@ TinyPass creates a single database file called "tinypass.db" in the home directo
 - Browse to https://your.ip/tinypass/
 
 The great thing about TinyPass is that it works with secrets and 100% Custom Fields that can be added, changed, rearranged, moved up and down and deleted any time. 
-It also has a clean, non-distracting interface with context driven menu along with many other fun features.
+It also has a clean, non-distracting interface with a context driven menu along with many other fun features.
 
 
 ## Functions
