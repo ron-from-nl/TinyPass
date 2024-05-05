@@ -51,15 +51,15 @@ Security is critical so all Pass(word) fields are AES-256-CTR written encrypted 
 
 ### Groups
 
-Secrets can be members of a "Group" selected from a list. The group selection list is editable and non existing Groups are automatically added to the user's groups.
+Optionally Secrets can be members of a "Group" selected from a list. The group selection list is editable and non existing Groups are automatically added to the user's groups.
 
 ### Search
 
-The interface has a powerful search engine that searches deep into "Secrets" and "Custom Fields", optionally filtered by group (SQLite "LIKE" wildcards "_" and "%" apply.
+The interface has a powerful search engine that searches deep into "Secrets" and "Custom Fields", optionally filtered by the Group Search field (SQLite "LIKE" wildcards "_" and "%" apply.
 
 ### Sort
 
-You can sort all columns in ascending and descending order
+You can sort all columns in ascending and descending order. Sorting the first Id column makes it convenient to chronologically sort and delete early or later added Secrets in case of CSV Imports. 
 
 ### Select
 
