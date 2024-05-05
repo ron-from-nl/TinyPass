@@ -1531,10 +1531,13 @@ ORDER BY secrets.secret_name ASC;
 				<head>
 					<meta charset="utf-8">
 					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-					<title>Tiny Password Manager</title>
+					<title>TinyPass Password Manager</title>
 					<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
-					<meta name="description" content="">
+					
+					<meta name="description" content="Password Manager with SQLite DB and 100% Custom Fields">
+					<meta name="application-name" content="TinyPass">
+					<meta name="keywords" content="Password Manager, Tiny Server, Passwords, Password Safe, password fatigue, cyber-security">
+					<meta name="author" content="Ron de Jong">
 					<meta name="viewport" content="width=device-width, initial-scale=1">
 					<meta name="referrer" content="no-referrer" />
 
