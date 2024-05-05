@@ -23,7 +23,7 @@ TinyPass does all that stuff by itself when it can't find the "tinypass.db" file
 - Configure your (Apache) Web Server
 - Browse to https://your.ip/tinypass/
 
-The great thing about TinyPass is that it has a clean, non-distracting interface and works with secrets and 100% custom fields that can be added, changed, rearranged, moved up and down and deleted at any time, along with many other fun features
+The great thing about TinyPass is that it has a clean, non-distracting interface and works with secrets and 100% custom fields that can be added, changed, rearranged, moved up and down and deleted at any time, along with many other fun features.
 
 ## Functions
 
@@ -77,7 +77,7 @@ Login                                                           |  Show Secrets 
 |  ![Edit Secret](/img/08-tinypass.jpg?raw=true "Edit Secret")  |  ![Edit Secret](/img/09-tinypass.jpg?raw=true "Edit Secret")  |
 
 
-Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
+https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 ## Requirements
 
