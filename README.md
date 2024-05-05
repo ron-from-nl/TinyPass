@@ -47,15 +47,22 @@ It also has a clean, non-distracting interface with a context driven menu along 
 
 ### Secrets
 
-TinyPass works with "Secrets" having any number of "Custom Fields" Every Secret has a Name and optionally is a member of a Group. Every new Secret starts with no Fields at all.
-Simply add or remove any number of Custom Fields you need and rearrange their order up and down in which they should appear.
+TinyPass works with "Secrets" with any number of Fields. New Secrets start out with just a Name and an optional Group.
+Then you can add, change or remove any number of Fields you need and rearrange them up and down to set their order.
+
+Traditional Password Managers work with Fixed Fields sometimes supplemented with a limited number of Custom Fields. This often causes unused and missing fields in your Secrets.
+Fixed Field Password Managers often complicate things by offering a large selection list of Secret Types (secrets with predefined sets of fields) making the usage more laborious.
+TinyPass breaks with the Fixed Field tradition of Password Managers offering a 100% Custom Fields making unnecessary and missing Fields and predefined fields a thing of the past.
 
 ### Fields
 
-TinyPass Secrets can have any number of Custom Fields of Type: URL, Mail, Pass, Text, Note (multi-line textarea) giving you exactly the Fields you need for your Secrets.
-Traditional Password Managers work with Fixed Fields sometimes supplemented with a limited number of Custom Fields. This often causes missing or redundant fields in your Secrets.
-The Fixed Field problem even gets worse when the user is offered a large list of Secret Types (with predefined fields) making it even more laborious to create secrets.
-TinyPass was designed to revolutionize Password Managers and come up with 100% Custom Fields making unnecessary and missing Fields a thing of the past.
+The Field Types:
+
+URL - Validated link (that opens a browser)				<br />
+Mail - Validated Email address often used as Login		<br />
+Pass - Password field (blind clipboard copy / paste)	<br />
+Text - General purpose single line text field			<br />
+Note - Multi-line textarea that can be resized			<br />
 
 ### Groups
 
