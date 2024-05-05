@@ -74,7 +74,7 @@ The interface has a powerful search engine that searches deep into "Secrets" and
 
 ### Sort
 
-You can sort all columns in "Show Secrets", "Show Groups" and "Show Users" in ascending and descending order. Sorting the first Id column can come in handy when for instance you need to remove that last CSV import.
+You can sort all columns in "Show Secrets", "Show Groups" and "Show Users" in ascending and descending order. Sorting the first "Id" column can be handy when you need to remove the last CSV import.
 
 ### Select
 
