@@ -2,6 +2,21 @@
 
 Password Manager with SQLite DB and 100% Custom Fields (author: [Ron de Jong](https://www.tiny-server.com/#contact))
 
+<!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [Info](#info)
+- [Licence](#licence)
+- [Functions](#functions)
+- [Description](#description)
+- [Desctop Screenshots](#desktop-screenshots)
+- [Mobile Screenshots](#mobile-screenshots)
+- [Requirements](#requirements)
+- [Installation](#installation)
+
+<!-- MDTOC -->
+
+## Info
+
 TinyPass is how Password Managers should be I think. No installation hassle, no database server, no db user & access rights or manual paths and URLs to specify, no websetup to go through.
 TinyPass does all that stuff by itself when it can't find the "tinypass.db" file in the home directory also making backups & restores super easy.
 
@@ -11,7 +26,11 @@ TinyPass does all that stuff by itself when it can't find the "tinypass.db" file
 
 The beauty of TinyPass is that every Secret holds any number of Custom Fields which can be Added, Changed, Reordered Up and Down and Deleted at any time together with many other nice features
 
-Functionality
+## Licence
+
+[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0 LEGAL CODE)](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)
+
+## Functions
 
 - Groups
 - Multi User
@@ -24,6 +43,8 @@ Functionality
 - Built-in SQLite DB
 - Password Encryption
 
+## Description
+
 Tiny Pass works with "Secrets". Every Secret can have any number of "Custom Fields" with different "Field Types" such as: "URL" "Mail" "Pass" "Text" "Note".
 Secrets can be a member of a "Group" that is selected from a list. The Group selection list is editable so new Groups are easily added to the user's groups. 
 The Interface has a powerful Search Engine that deeply searches "Secrets" and "Custom Fields" optionally filtered by Group (SQLite "LIKE" wildcards "_" and "%" apply.
@@ -33,7 +54,9 @@ CSV Import / Export (with auto format recognition) is compatible with more than 
 Tiny Pass AES-256-CTR en/decrypts all "Password" fields with a SHA512 hash-key of your user password that is written nowhere, so please remember your User Password!
 TinyPass is designed with performance in mind and also supports mobile screens. 
 
-## Desktop Screenshots
+## Screenshots
+
+Desktop Screenshots
 
 Login                                                           |  Show Secrets
 :--------------------------------------------------------------:|:-------------------------------------------------------------:
@@ -44,7 +67,7 @@ View Secret                                                     |  Edit Secret
 ![View Secret](/img/03-tinypass.png?raw=true "View Secret")     |  ![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
 
 
-## Mobile Screenshots
+Mobile Screenshots
 
 Login                                                           |  Show Secrets                                                 |Show Secrets Menu                                              
 :--------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:
@@ -56,22 +79,6 @@ Login                                                           |  Show Secrets 
 
 
 Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
-
-<!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
-
-- [Licence Agreement](#licence-agreement)
-- [Requirements](#requirements)
-- [Installation](#installation)
-
-<!-- /MDTOC -->
-
-## Website
-
-[Developed by Tiny Server](https://tiny-server.com/)
-
-## Licence Agreement
-
-[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0 LEGAL CODE)](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)
 
 ## Requirements
 
@@ -86,6 +93,7 @@ Video: https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
   * hash
   * pcre
   * mbstring
+
 
 ## Installation
 
@@ -156,3 +164,4 @@ sudo systemctl status apache2;
 ```
 
 - Open a browser to https://www.your.host/tinypass/
+
