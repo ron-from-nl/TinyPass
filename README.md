@@ -15,6 +15,7 @@ Password Manager with SQLite DB and 100% Custom Fields (author: [Ron de Jong](ht
 
 <!-- MDTOC -->
 
+
 ## Easy
 
 TinyPass has no installation hassle, no database server, no db user & access rights or manual paths and URLs to specify, no websetup to go through.
@@ -25,6 +26,7 @@ TinyPass does all that stuff by itself when it can't find the "tinypass.db" file
 - Browse to https://your.ip/tinypass/
 
 The great thing about TinyPass is that it has a clean, non-distracting interface and works with secrets and 100% custom fields that can be added, changed, rearranged, moved up and down and deleted at any time, along with many other fun features.
+
 
 ## Functions
 
@@ -39,6 +41,7 @@ The great thing about TinyPass is that it has a clean, non-distracting interface
 - Built-in SQLite DB
 - Password Encryption
 
+
 ## Description
 
 Tiny Pass works with "Secrets" which can have any number of "Custom Fields" with different field types, such as: "URL" "Mail" "Pass" "Text" "Note".
@@ -50,11 +53,14 @@ CSV Import/Export (with automatic format recognition) is compatible with more th
 Tiny Pass AES-256-CTR encrypts/decrypts all "Password" fields with a SHA512 hash key of your user password that is not written anywhere, so remember your user password!
 TinyPass is designed with performance in mind and also supports mobile screens.
 
+
 ## User Licence
 
 [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0 LEGAL CODE)](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)
 
+
 ## Screenshots
+
 
 Desktop Screenshots
 
@@ -81,8 +87,10 @@ Login                                                           |  Show Secrets 
 
 [![Watch the video](/img/01-tinypass.png)](https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v)
 
+
 ## Requirements
 
+* Web Server (Apache2)
 * PHP 7.4 or newer,
 * PHP extensions:
   
@@ -164,5 +172,5 @@ Test Status
 sudo systemctl status apache2;
 ```
 
-- Open a browser to https://www.your.host/tinypass/
+- Open a browser to https://your.ip/tinypass/
 
