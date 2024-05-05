@@ -80,7 +80,7 @@ Login                                                           |  Show Secrets 
 https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 <video width="auto" height="auto" controls>
-  <source src="video/tinypass-.m4v" type="video/mp4">
+  <source src="video/tinypass.m4v" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
