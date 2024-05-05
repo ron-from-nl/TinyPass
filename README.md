@@ -54,7 +54,7 @@ Simply add or remove any number of Custom Fields that you need for your Secret a
 TinyPass Secrets can have any number of Custom Fields of Type: URL, Mail, Pass, Text, Note (multi-line textarea) giving you exactly the Fields you need for your Secrets.
 Traditional Password Managers work with Fixed Fields supplemented with a limited number of Custom Fields. This often causes missing or redundant fields in your Secrets.
 The Fixed Field problem even gets worse when the user is offered a large list of Secret Types (with predefined fields) making it even more laborious to create secrets.
-TinyPass was designed to revolutionise Fixed Field Password Managers and come up with 100% Custom Fields system making unnecessary or missing Fields a thing of the past.
+TinyPass was designed to revolutionise Fixed Field Password Managers and come up with 100% Custom Fields making unnecessary or missing Fields a thing of the past.
 
 ### Groups
 
