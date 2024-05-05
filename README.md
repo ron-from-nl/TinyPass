@@ -88,7 +88,7 @@ When a user performs a Password Change, then all Password Fields are re-encrypte
 
 ### Import / Export
 
-TinyPass supports CSV Import / Export (with automatic format recognition) and compatible with more than 10 different password managers, including various browsers and other well-known formats.
+TinyPass supports CSV Import / Export (with automatic format recognition) and is compatible with more than 10 different password manager formats, including various browsers and other well-known formats.
 The group filter is also useful here, allowing you to export only Secrets being a member of a certain Group for instance when using Groups as names of people for whom you keep Secrets.
 
 ### Security
