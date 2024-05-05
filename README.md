@@ -9,6 +9,7 @@ Password Manager with SQLite DB and 100% Custom Fields (author: [Ron de Jong](ht
 - [Description](#description)
 - [User Licence](#user-licence)
 - [Screenshots](#screenshots)
+- [Demo Video](#demo-video)
 - [Requirements](#requirements)
 - [Installation](#installation)
 
@@ -76,17 +77,9 @@ Login                                                           |  Show Secrets 
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|
 |  ![Edit Secret](/img/08-tinypass.jpg?raw=true "Edit Secret")  |  ![Edit Secret](/img/09-tinypass.jpg?raw=true "Edit Secret")  |
 
+## Demo Video
 
 [![Watch the video](/img/01-tinypass.png)](https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v)
-
-https://github.com/ron-from-nl/TinyPass/blob/main/video/tinypass.m4v
-
-https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
-
-<video width="auto" height="auto" controls>
-  <source src="video/tinypass.m4v" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ## Requirements
 
