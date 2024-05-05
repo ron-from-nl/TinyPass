@@ -63,7 +63,7 @@ You can sort all columns in ascending and descending order. Sorting the first ID
 
 ### Select
 
-You can select multiple records in "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export.
+You can select multiple records in "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export. 
 
 ### Users
 
@@ -74,6 +74,7 @@ When a user performs a Password Change, then all Password Fields are re-encrypte
 ### Import / Export
 
 TinyPass supports CSV Import / Export (with automatic format recognition) and compatible with more than 10 different password managers, including various browsers and other well-known formats.
+The group filter is also useful here, allowing you to export only Secrets being a member of a certain Group for instamce when using Groups as names of people for whom you keep Secrets.
 
 ### Other
 
