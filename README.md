@@ -59,7 +59,7 @@ The interface has a powerful search engine that searches deep into "Secrets" and
 
 ### Sort
 
-You can sort all columns in ascending and descending order. Sorting the first ID column makes it easy to sort and remove secrets added later e.g. with a CSV import.
+You can sort all columns in ascending and descending order. Sorting the first ID column makes it easy to sort and remove secrets there were added first or last for instance with a CSV import.
 
 ### Select
 
