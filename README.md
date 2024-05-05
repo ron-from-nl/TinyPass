@@ -4,20 +4,19 @@ Password Manager with SQLite DB and 100% Custom Fields (author: [Ron de Jong](ht
 
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
-- [Info](#info)
-- [Licence](#licence)
+- [Easy](#easy)
 - [Functions](#functions)
 - [Description](#description)
-- [Desctop Screenshots](#desktop-screenshots)
-- [Mobile Screenshots](#mobile-screenshots)
+- [User Licence](#user-licence)
+- [Screenshots](#screenshots)
 - [Requirements](#requirements)
 - [Installation](#installation)
 
 <!-- MDTOC -->
 
-## Info
+## Easy
 
-TinyPass is how Password Managers should be I think. No installation hassle, no database server, no db user & access rights or manual paths and URLs to specify, no websetup to go through.
+TinyPass has no installation hassle, no database server, no db user & access rights or manual paths and URLs to specify, no websetup to go through.
 TinyPass does all that stuff by itself when it can't find the "tinypass.db" file in the home directory also making backups & restores super easy.
 
 - Copy TinyPass to a web directory
@@ -25,10 +24,6 @@ TinyPass does all that stuff by itself when it can't find the "tinypass.db" file
 - Browse to https://your.ip/tinypass/
 
 The beauty of TinyPass is that every Secret holds any number of Custom Fields which can be Added, Changed, Reordered Up and Down and Deleted at any time together with many other nice features
-
-## Licence
-
-[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0 LEGAL CODE)](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)
 
 ## Functions
 
@@ -53,6 +48,10 @@ By default there are two Users called User: "admin" (role: "Admin") and User: "t
 CSV Import / Export (with auto format recognition) is compatible with more than 10 different Password Managers including different browsers and other well known formats.
 Tiny Pass AES-256-CTR en/decrypts all "Password" fields with a SHA512 hash-key of your user password that is written nowhere, so please remember your User Password!
 TinyPass is designed with performance in mind and also supports mobile screens. 
+
+## User Licence
+
+[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0 LEGAL CODE)](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)
 
 ## Screenshots
 
