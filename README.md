@@ -82,9 +82,9 @@ You can select multiple records in "Show Secrets", "Show Groups" and "Show Users
 
 ### Users
 
-By default there are two users named **User: "admin"** (role: "Admin") and **User: "tiny"** (role: "User"). Administrators can also add, change, or delete users (including their secrets).
-When an Admininistrator deletes a user then all user-related Secrets, Custom Fields and Groups are deleted. For security Admins cannot read other user's Secrets without the user password.
-When a user performs a Password Change, then all Password Fields are re-encrypted. Another great feature is that TinyPass has a Shell interface that enables automating Password Changes.  
+By default there are two users named **User: "admin"** (role: "Admin") and **User: "tiny"** (role: "User"). Admins can also add, change, or delete users.
+When an Admin deletes a user then all user-related Secrets and Groups are deleted. Admins cannot read other user Secrets and cannot delete users: "admin", "tiny".
+When a user performs a Password Change, then all Password Fields are re-encrypted. TinyPass also has a Shell interface that enables automated Password Changes.  
 
 ### Import / Export
 
