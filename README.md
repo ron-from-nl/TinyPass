@@ -72,7 +72,7 @@ Optionally, Secrets can be members of a "Group" selected from a list. The group 
 
 ### Search
 
-The interface has a good search engine that deeply searches inside the Fields of your Secrets, optionally filtered by Group with result stats (SQL wildcards "_" and "%" are supported).
+The interface has a good search engine that deeply searches inside the Fields of your Secrets, optionally filtered by Group with stats (SQL wildcards "_" and "%" are supported).
 
 ### Sort
 
