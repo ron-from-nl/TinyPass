@@ -106,7 +106,7 @@ Login                                                           |  Show Secrets 
 
 ## Installation
 
-- Create a directory to copy TinyPass (e.g. "/var/www/html/tinypass")
+- **Create a directory to copy TinyPass (e.g. "/var/www/html/tinypass")**
 
 ```
 sudo -u www-data mkdir -v "/var/www/html/tinypass";
@@ -120,7 +120,7 @@ sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" mkdir -v "$(
 
 ---
 
-- Copy TinyPass to your new directory (e.g. "/var/www/html/tinypass")
+- **Copy TinyPass to your new directory (e.g. "/var/www/html/tinypass")**
 
 ```
 sudo -u www-data git clone https://github.com/ron-from-nl/TinyPass.git "/var/www/html/tinypass";
@@ -134,7 +134,7 @@ sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" git clone ht
 
 ---
 
-- Configure your webserver (Apache2 example)
+- **Configure your webserver (Apache2 example)**
 
 ```
 sudo nano /etc/apache2/sites-available/000-default.conf
