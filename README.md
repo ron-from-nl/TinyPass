@@ -47,7 +47,7 @@ The great thing about TinyPass is that it has a clean, non-distracting interface
 ### Secrets
 
 TinyPass works with "Secrets" having any number of "Custom Fields" Every Secret has a Name and optionally is a member of a Group. Every new Secret starts with no Fields at all.
-Simply add or remove any number of Custom Fields that you need for your Secret and rearrange the order in which they should appear within your Secret.
+Simply add or remove any number of Custom Fields you need and rearrange their order up and down in which they should appear.
 
 ### Fields
 
