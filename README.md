@@ -18,8 +18,8 @@ PHP Password Manager with 100% Custom Fields and built-in SQLite DB (author: [Ro
 
 ## Easy
 
-TinyPass has no installation hassle, no database server, no db user & access rights or manual paths and URLs to specify, no websetup to go through.
-TinyPass does all that stuff by itself when it can't find the "tinypass.db" file in the home directory also making backups & restores super easy.
+TinyPass is easy to install with no installation hassle, no database server, no db user & access rights or manual Paths and URLs to specify, no websetup to go through.
+TinyPass creates a single (database backend) file called "tinypass.db" in the home directory at first run or when it's missing, which also makes backup & restore simple.
 
 - Copy TinyPass to a web directory
 - Configure your (Apache) Web Server
