@@ -63,7 +63,7 @@ You can sort all columns in ascending and descending order. Sorting the first ID
 
 ### Select
 
-You can select multiple records in menu "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export.
+You can select multiple records in "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export.
 
 ### Users
 
