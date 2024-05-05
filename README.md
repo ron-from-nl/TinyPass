@@ -46,7 +46,7 @@ The great thing about TinyPass is that it has a clean, non-distracting interface
 
 ### Secrets
 
-TinyPass works with "Secrets" having any number of "Custom Fields" of type: URL, Mail, Pass (encrypted), Text, Note (multi-line textarea).
+TinyPass works with "Secrets" having any number of "Custom Fields" of type: URL, Mail, Pass (encrypted), Text, Note (multi-line).
 Security is critical so all Pass(word) fields are AES-256-CTR written encrypted in the database with a SHA512 hash key of your user password that is not written anywhere, so remember your user password!
 
 ### Groups
