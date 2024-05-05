@@ -72,7 +72,7 @@ Optionally, Secrets can be members of a "Group" selected from a list. The group 
 
 ### Search
 
-The interface has a powerful search engine that searches deep into "Secrets" and "Custom Fields", optionally filtered by the Group Search field (SQLite "LIKE" wildcards "_" and "%" apply.
+The interface has a good search engine that deeply searches inside the Fields of your Secrets, optionally filtered by Group (SQL wildcards "_" and "%" are supported.
 
 ### Sort
 
