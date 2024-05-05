@@ -77,6 +77,8 @@ Login                                                           |  Show Secrets 
 |  ![Edit Secret](/img/08-tinypass.jpg?raw=true "Edit Secret")  |  ![Edit Secret](/img/09-tinypass.jpg?raw=true "Edit Secret")  |
 
 
+https://github.com/ron-from-nl/TinyPass/blob/main/video/tinypass.m4v
+
 https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v
 
 <video width="auto" height="auto" controls>
