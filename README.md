@@ -62,7 +62,7 @@ TinyPass is designed with performance in mind and also supports mobile screens.
 ## Screenshots
 
 
-Desktop Screenshots
+### Desktop Screenshots
 
 Login                                                           |  Show Secrets
 :--------------------------------------------------------------:|:-------------------------------------------------------------:
@@ -73,7 +73,7 @@ View Secret                                                     |  Edit Secret
 ![View Secret](/img/03-tinypass.png?raw=true "View Secret")     |  ![Edit Secret](/img/04-tinypass.png?raw=true "Edit Secret")
 
 
-Mobile Screenshots
+### Mobile Screenshots
 
 Login                                                           |  Show Secrets                                                 |Show Secrets Menu                                              
 :--------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:
