@@ -118,6 +118,8 @@ or create dir automatically to a subdir of your real DocumentRoot as the user ru
 sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" mkdir -v "$(sudo apachectl -S | grep "DocumentRoot" | awk -F"\"" '{ print $2 }')tinypass";
 ```
 
+---
+
 - Copy TinyPass to your new directory (e.g. "/var/www/html/tinypass")
 
 ```
@@ -129,6 +131,8 @@ or copy automatically to a subdir of your real DocumentRoot as the user running 
 ```
 sudo -u "$(apachectl -S | grep "User" | awk -F"\"" '{ print $2 }')" git clone https://github.com/ron-from-nl/TinyPass.git "$(sudo apachectl -S | grep "DocumentRoot" | awk -F"\"" '{ print $2 }')tinypass";
 ```
+
+---
 
 - Configure your webserver (Apache2 example)
 
@@ -153,6 +157,8 @@ Alias /tinypass/ /where/ever/you/copied/tinypass/
 	Require all granted
 </Directory>
 ```
+
+---
 
 Test Config
 
