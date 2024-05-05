@@ -44,38 +44,38 @@ The great thing about TinyPass is that it has a clean, non-distracting interface
 
 ## Description
 
-- Secrets
+### Secrets
 
 TinyPass works with "Secrets" having any number of "Custom Fields" of type: URL, Mail, Pass (encrypted), Text, Note (multi-line textarea).
-Sucurity is critical so all Pass(word) fields are AES-256-CTR written encrypted in the database with a SHA512 hash key of your user password that is not written anywhere, so remember your user password!
+Security is critical so all Pass(word) fields are AES-256-CTR written encrypted in the database with a SHA512 hash key of your user password that is not written anywhere, so remember your user password!
 
-- Groups
+### Groups
 
 Secrets can be members of a "Group" selected from a list. The group selection list is editable and non existing Groups are automatically added to the user's groups.
 
-- Search
+### Search
 
 The interface has a powerful search engine that searches deep into "Secrets" and "Custom Fields", optionally filtered by group (SQLite "LIKE" wildcards "_" and "%" apply.
 
-- Sort
+### Sort
 
 You can sort all columns in ascending and descending order
 
-- Select
+### Select
 
 You can select multiple records in menu "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export.
 
-- Users
+### Users
 
 By default there are two users named **User: "admin"** (role: "Admin") and **User: "tiny"** (role: "User"). Administrators can also add, change, or delete users (including their secrets).
 When an Admininistrator deletes a user then all user-related Secrets, Custom Fields and Groups are deleted. For security Admins cannot read other user's Secrets without the user password.
 When a user performs a Password Change, then all Password Fields are re-encrypted. Another great feature is that TinyPass has a Shell interface that enables automating Password Changes.  
 
-- Import / Export
+### Import / Export
 
 TinyPass supports CSV Import / Export (with automatic format recognition) and compatible with more than 10 different password managers, including various browsers and other well-known formats.
 
-- Other
+### Other
 
 TinyPass is designed with performance in mind and also supports mobile screens.
 
