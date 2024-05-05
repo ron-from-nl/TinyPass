@@ -18,12 +18,12 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 
 ## Easy
 
-TinyPass is easy to install with no installation hassle, no database server, no db user & access rights or manual Paths and URLs to specify, no websetup to go through.
-TinyPass creates a single database file called "tinypass.db" in the home directory when it's not there, which also makes backup & restore super simple.
+	TinyPass is easy to install with no installation hassle, no database server, no db user & access rights or manual Paths and URLs to specify, no websetup to go through.
+	TinyPass creates a single database file called "tinypass.db" in the home directory when it's not there, which also makes backup & restore super simple.
 
-- Copy TinyPass to a web directory
-- Configure your (Apache) Web Server
-- Browse to https://your.ip/tinypass/
+	- Copy TinyPass to a web directory
+	- Configure your (Apache) Web Server
+	- Browse to https://your.ip/tinypass/
 
 The great thing about TinyPass is that it works with Secrets and 100% Custom Fields that can be added, changed, rearranged, moved up and down and deleted at any time. 
 It also has a clean, non-distracting interface with a context driven menu along with many other fun features.
@@ -31,38 +31,38 @@ It also has a clean, non-distracting interface with a context driven menu along 
 
 ## Functions
 
-- Groups
-- Multi User
-- Simple Usage
-- Search Engine
-- Custom Fields
-- Reorder Fields
-- Clean Interface
-- CSV Import/Export
-- Built-in SQLite DB
-- Password Encryption
+	- Groups
+	- Multi User
+	- Simple Usage
+	- Search Engine
+	- Custom Fields
+	- Reorder Fields
+	- Clean Interface
+	- CSV Import/Export
+	- Built-in SQLite DB
+	- Password Encryption
 
 
 ## Description
 
 ### Secrets
 
-TinyPass works with "Secrets" with any number of Fields. New Secrets start out with just a Name and an optional Group.
-Then you can add, change or remove any number of Fields you need and rearrange them up and down to set their order.
+	TinyPass works with "Secrets" with any number of Fields. New Secrets start out with just a Name and an optional Group.
+	Then you can add, change or remove any number of Fields you need and rearrange them up and down to set their order.
 
-Traditional Password Managers work with Fixed Fields often supplemented with a limited number of Custom Fields. This often causes unused and missing fields in your Secrets.
-Fixed Field Password Managers often complicate things with a large selection list of predefined Secrets (secrets with predefined sets of fields) making things more laborious.
-TinyPass breaks with the Fixed Field tradition with a radical new design offering an unlimited number of Fields per Secret making unused and missing Fields a thing of the past.
+	Traditional Password Managers work with Fixed Fields often supplemented with a limited number of Custom Fields. This often causes unused and missing fields in your Secrets.
+	Fixed Field Password Managers often complicate things with a large selection list of predefined Secrets (secrets with predefined sets of fields) making things more laborious.
+	TinyPass breaks with the Fixed Field tradition with a radical new design offering an unlimited number of Fields per Secret making unused and missing Fields a thing of the past.
 
 ### Fields
 
-The Field Types:
+	The Field Types:
 
-URL - Validated link (that opens a browser)				<br />
-Mail - Validated Email address often used as Login		<br />
-Pass - Password field (blind clipboard copy / paste)	<br />
-Text - General purpose single line text field			<br />
-Note - Multi-line textarea that can be resized			<br />
+	URL - Validated link (that opens a browser)				<br />
+	Mail - Validated Email address often used as Login		<br />
+	Pass - Password field (blind clipboard copy / paste)	<br />
+	Text - General purpose single line text field			<br />
+	Note - Multi-line textarea that can be resized			<br />
 
 ### Groups
 
@@ -70,26 +70,26 @@ Optionally Secrets can be members of a "Group" selected from a list. The group s
 
 ### Search
 
-The interface has a powerful search engine that searches deep into "Secrets" and "Custom Fields", optionally filtered by the Group Search field (SQLite "LIKE" wildcards "_" and "%" apply.
+	The interface has a powerful search engine that searches deep into "Secrets" and "Custom Fields", optionally filtered by the Group Search field (SQLite "LIKE" wildcards "_" and "%" apply.
 
 ### Sort
 
-You can sort all columns in "Show Secrets", "Show Groups" and "Show Users" in ascending and descending order. Sorting the first "Id" column can be handy when you need to remove the last CSV import.
+	You can sort all columns in "Show Secrets", "Show Groups" and "Show Users" in ascending and descending order. Sorting the first "Id" column can be handy when you need to remove the last CSV import.
 
 ### Select
 
-You can select multiple records in "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export. 
+	You can select multiple records in "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export. 
 
 ### Users
 
-By default there are two users named **User: "admin"** (role: "Admin") and **User: "tiny"** (role: "User"). Admins can also add, change, or delete users.
-When an Admin deletes a user then all user-related Secrets and Groups are deleted. Admins cannot read other user Secrets and cannot delete users: "admin", "tiny".
-When a user performs a Password Change, then all Password Fields are re-encrypted. TinyPass also has a Shell interface that enables automated Password Changes.  
+	By default there are two users named **User: "admin"** (role: "Admin") and **User: "tiny"** (role: "User"). Admins can also add, change, or delete users.
+	When an Admin deletes a user then all user-related Secrets and Groups are deleted. Admins cannot read other user Secrets and cannot delete users: "admin", "tiny".
+	When a user performs a Password Change, then all Password Fields are re-encrypted. TinyPass also has a Shell interface that enables automated Password Changes.  
 
 ### Import / Export
 
-TinyPass supports CSV Import / Export (with automatic format recognition) and is compatible with more than 10 different password manager formats, including various browsers and other well-known formats.
-The group filter is also useful here, allowing you to export only Secrets being a member of a certain Group for instance when using Groups as names of people for whom you keep Secrets.
+	TinyPass supports CSV Import / Export (with automatic format recognition) and is compatible with more than 10 different password manager formats, including various browsers and other well-known formats.
+	The group filter is also useful here, allowing you to export only Secrets being a member of a certain Group for instance when using Groups as names of people for whom you keep Secrets.
 
 ### Security
 
