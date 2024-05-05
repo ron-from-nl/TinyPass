@@ -68,7 +68,7 @@ Note - Multi-line textarea that can be resized			<br />
 
 ### Groups
 
-Optionally Secrets can be members of a "Group" selected from a list. The group selection list is editable and non existing Groups are automatically added to the user's groups.
+Optionally, Secrets can be members of a "Group" selected from a list. The group selection list is editable and non-existent groups are automatically added to the user's groups, making group management a breeze.
 
 ### Search
 
