@@ -2,8 +2,8 @@
 
 Password Manager with SQLite DB and 100% Custom Fields (author: [Ron de Jong](https://www.tiny-server.com/#contact))
 
-TinyPass is how Password Managers should be I think. No installation hassle, no database server, no db user & access rights or manual paths and URLs to specify.
-No WebSetup to go through. TinyPass does all that stuff by itself when it can't find the "tinypass.db" file in the home directory also making backups super easy.
+TinyPass is how Password Managers should be I think. No installation hassle, no database server, no db user & access rights or manual paths and URLs to specify,no websetup to go through.
+TinyPass does all that stuff by itself when it can't find the "tinypass.db" file in the home directory also making backups & restores super easy.
 
 - Copy TinyPass to a web directory
 - Configure your (Apache) Web Server
