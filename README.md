@@ -1,6 +1,6 @@
 # TinyPass
 
-PHP Password Manager with 100% Custom Fields and built-in SQLite DB (author: [Ron de Jong](https://www.tiny-server.com/#contact))
+PHP Password Manager with 100% Custom Fields and a built-in SQLite DB (author: [Ron de Jong](https://www.tiny-server.com/#contact))
 
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 

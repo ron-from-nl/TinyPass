@@ -1534,7 +1534,7 @@ ORDER BY secrets.secret_name ASC;
 					<title>TinyPass Password Manager</title>
 					<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 					
-					<meta name="description" content="PHP Password Manager with 100% Custom Fields and built-in SQLite DB">
+					<meta name="description" content="PHP Password Manager with 100% Custom Fields and a built-in SQLite DB">
 					<meta name="application-name" content="TinyPass">
 					<meta name="keywords" content="Password Manager, Tiny Server, Passwords, Password Safe, password fatigue, cyber-security">
 					<meta name="author" content="Ron de Jong">
