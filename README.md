@@ -160,19 +160,19 @@ Alias /tinypass/ /where/ever/you/copied/tinypass/
 
 ---
 
-Test Config
+- **Test Config**
 
 ```
 sudo apachectl configtest;
 ```
 
-Reload Config
+- **Reload Config**
 
 ```
 sudo systemctl reload apache2;
 ```
 
-Test Status
+- **Test Status**
 
 ```
 sudo systemctl status apache2;
