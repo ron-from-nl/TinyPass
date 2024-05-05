@@ -1,4 +1,6 @@
-# TinyPass (New: 1st of May 2024)
+# TinyPass
+
+New: 1st of May 2024
 
 PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (author: [Ron de Jong](https://www.tiny-server.com/#contact))
 
