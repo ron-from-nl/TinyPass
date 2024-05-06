@@ -7,7 +7,7 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
 - [Easy](#easy)
-- [Try Demo](#demo)
+- [Try Demo](https://www.tiny-server.com/web/share/drive/public/tinypass/index.php)
 - [Functions](#functions)
 - [Description](#description)
 - [User Licence](#user-licence)
