@@ -192,9 +192,9 @@ Add the following example section (edit alias and directory)
 
 ```
 RewriteRule ^/tinypass$ /tinypass/ [R,L]
-Alias /tinypass/ /where/ever/you/copied/tinypass/
+Alias /tinypass/ /var/www/html/tinypass/
 
-<Directory /where/ever/you/copied/tinypass>
+<Directory /var/www/html/tinypass>
 	Options MultiViews SymLinksIfOwnerMatch
 
 	<Files tinypass.db>
