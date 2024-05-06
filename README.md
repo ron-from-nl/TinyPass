@@ -63,7 +63,7 @@ The Field Types:
 
 URL - Link that also opens a browser	<br />
 Mail - Email address (can be a Login)	<br />
-Pass - Password field (encrypted)		<br />
+Pass - Password Field (encrypted)		<br />
 Text - General purpose text field		<br />
 Note - Multi-line resizable textarea	<br />
 
