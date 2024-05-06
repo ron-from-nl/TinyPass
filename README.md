@@ -61,11 +61,11 @@ TinyPass breaks with the Fixed Field tradition with a radical new design offerin
 
 The Field Types:
 
-URL - Validated link (that opens a browser)				<br />
-Mail - Validated Email address often used as Login		<br />
-Pass - Password field (blind clipboard copy / paste)	<br />
-Text - General purpose single line text field			<br />
-Note - Multi-line textarea that can be resized			<br />
+URL - Link that also opens a browser	<br />
+Mail - Email address (can be Login)		<br />
+Pass - Password field (encrypted)		<br />
+Text - General purpose text field		<br />
+Note - Multi-line resizable textarea	<br />
 
 ### Groups
 
