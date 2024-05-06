@@ -2941,7 +2941,7 @@ EOF;
 
 			if ( DEMO )
 			{
-				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9);\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Demo Login</button>";
+				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9);\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Login Demo</button>";
 			}
 			else
 			{
