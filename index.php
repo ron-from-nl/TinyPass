@@ -12,6 +12,8 @@
 
 		require("fortune/fortune.php");
 
+        define('DEMO', 0);
+
 		$date = date("Y-m-d_H-i-s");
         $isodate = date("Y-m-d");
 		$isotime = date("H-i-s");
@@ -569,7 +571,7 @@ CREATE TABLE IF NOT EXISTS fields
 				echo "<input type=\"hidden\" id=\"tinypass_formname\" name=\"tinypass_formname\" value=\"$form\">";
 				echo "<input type=\"hidden\" id=\"tp_login_uname\" name=\"tp_login_uname\" value=\"$tp_login_uname\">";
 				echo "<input type=\"hidden\" id=\"tp_login_pword\" name=\"tp_login_pword\" value=\"$tp_login_pword\">";
-				echo "<button class=\"bigbutton\" style=\"font-size: large; white-space: nowrap;\" type=\"submit\">$button</button>";
+				//~ echo "<button class=\"bigbutton\" style=\"font-size: large; white-space: nowrap;\" type=\"submit\">$button</button>";
 				echo "</form>";
 				
 				echo "</td></tr></table></div>";
@@ -2936,7 +2938,16 @@ EOF;
 			//~ echo "			<tr><td >&nbsp</td></tr>										";
 			echo "			<tr>";
 			echo "			<td style=\"text-align: center; color: black;\">";
-			echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9);\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Login</button>";
+
+			if ( DEMO )
+			{
+				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9);\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Demo Login</button>";
+			}
+			else
+			{
+				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9);\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Login</button>";
+			} 
+
 			echo "			</td>";
 			echo "			</tr>";
 			echo "		</tfoot>";
@@ -4864,13 +4875,29 @@ EOF;
 			
 			if (( file_exists($GLOBALS["tiny_setup_wrapper"]) ) && ( $record->user_name == "admin" || $record->user_name == "tiny" ))
 			{
-				echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=9 style=\"text-align: center; color: grey;\">It is advised to use <a href=\"../../desktop/?search=setup\" target=\"_blank\">Tiny Desktop</a> -> <a href=\"http://" . $GLOBALS["customer_domain"] . "/setup/\" target=\"_blank\">Tiny Server Setup</a> -> <span style=\"color: white;\">Set Password</span> to change your password server wide for all Internet Services (including Tiny Pass)</td></tr>";										
-				echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=9>&nbsp</td></tr>";										
+				if ( DEMO )
+				{
+					echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=9 style=\"text-align: center; color: red;\">You can't change passwords in Demo Mode !!</td></tr>";										
+					echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=9>&nbsp</td></tr>";										
+				}
+				else
+				{
+					echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=9 style=\"text-align: center; color: grey;\">It is advised to use <a href=\"../../desktop/?search=setup\" target=\"_blank\">Tiny Desktop</a> -> <a href=\"http://" . $GLOBALS["customer_domain"] . "/setup/\" target=\"_blank\">Tiny Server Setup</a> -> <span style=\"color: white;\">Set Password</span> to change your password server wide for all Internet Services (including Tiny Pass)</td></tr>";										
+					echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=9>&nbsp</td></tr>";										
+				}
 			}
 
 			echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\">";
 			echo "				<td style=\"text-align: center; color: black;\" colspan=9>";
-			echo "					<button  	style=\"margin: 0rem 0.5rem 0rem 0.5rem;\" class=\"dark_grey_white_button\" type=\"submit\" name=\"save_password_button\" value=\"$user_id\" >Save</button>";
+
+			if (DEMO)
+			{
+				echo "					<button  	style=\"margin: 0rem 0.5rem 0rem 0.5rem;\" class=\"dark_grey_white_button\" type=\"submit\" name=\"save_password_button\" value=\"$user_id\" disabled>Save</button>";
+			}
+			else
+			{
+				echo "					<button  	style=\"margin: 0rem 0.5rem 0rem 0.5rem;\" class=\"dark_grey_white_button\" type=\"submit\" name=\"save_password_button\" value=\"$user_id\" >Save</button>";
+			}
 			echo "					<button 	style=\"margin: 0rem 0.5rem 0rem 0.5rem;\" class=\"dark_grey_red_button\"  type=\"submit\" name=\"cancel_password_button\" value=\"$user_id\" formnovalidate>Cancel</button>";
 			echo "				</td>";
 			echo "			</tr>";
@@ -5536,7 +5563,7 @@ EOF;
 				{                    
 					if ( authenticateUser($tp_login_uname, $tp_login_pword, $form, "[ ◀ OK ▶ ]", "index.php") ) // User authed
 					{
-						if ( authenticateUser($tp_login_uname, $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) // User has default pass and needs pass change
+						if ( ( authenticateUser($tp_login_uname, $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) && ( ! DEMO ) ) // User has default pass and needs pass change
 						{
 							$user_id = 	getUserIdByUserName($tp_login_uname, $form, "[ ◀ OK ▶ ]","index.php"); send_html_change_password_page($user_id, $tp_login_uname, $tp_login_pword, $search_names, $search_groups, $primar_column_order_fld, $primar_column_order_dir, $second_column_order_fld, $second_column_order_dir);
 						}
@@ -6778,7 +6805,7 @@ EOF;
 								{
 									// Update User
 									
-									echo "updateUser(\$pdo, $role_id, $user_id, $user_name, $form, \"[ ◀ OK ▶ ]\", \"index.php\");";
+									//~ echo "updateUser(\$pdo, $role_id, $user_id, $user_name, $form, \"[ ◀ OK ▶ ]\", \"index.php\");";
 									
 									updateUser($pdo, $role_id, $user_id, $user_name, $form, "[ ◀ OK ▶ ]", "index.php");
 
@@ -6827,54 +6854,79 @@ EOF;
 				}
 				elseif ($form == "change_password_form" )
 				{
-					if ( authenticateUser($tp_login_uname, $tp_login_pword, $form, "[ ◀ OK ▶ ]","index.php") )
-					{						
-						if ( isset($_POST['save_password_button']) && isset($_POST['role_name']) && isset($_POST['user_name']) && isset($_POST['old_pass_word']) && isset($_POST['new_pass_word']) )
-						{
-							$pdo = connectDB($form, "[ ◀ OK ▶ ]","index.php");
-							$user_id = $_POST['save_password_button'];
-							$role_name = $_POST['role_name'];
-							$role_id = getRoleIdByRoleName($pdo, $role_name, $form, "[ ◀ OK ▶ ]","index.php");
-							$user_name = $_POST['user_name'];
-							$old_pass_word = $_POST['old_pass_word'];
-							$new_pass_word = $_POST['new_pass_word'];
-							
-							change_password($user_name, $old_pass_word, $new_pass_word, true);
-							
-							if ( authenticateUser("tiny", $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) // User has default pass and needs pass change
+					if ( DEMO )
+					{
+						if ( authenticateUser($tp_login_uname, $tp_login_pword, $form, "[ ◀ OK ▶ ]","index.php") )
+						{						
+							if (isset($_POST['cancel_password_button']))
 							{
-								$user_id = 	getUserIdByUserName("tiny", $form, "[ ◀ OK ▶ ]","index.php");	send_html_change_password_page($user_id, "tiny", $GLOBALS["user_stnd_pass_word"], $search_names, $search_groups, $primar_column_order_fld, $primar_column_order_dir, $second_column_order_fld, $second_column_order_dir);
-								send_html_login_page(0);
+								//~ $user_id = htmlspecialchars($_POST['cancel_password_button'], ENT_QUOTES, 'UTF-8');
+								send_html_show_secrets_page($tp_login_uname, $tp_login_pword, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
 							}
 							else
 							{
-								if ( $old_pass_word == $GLOBALS["user_stnd_pass_word"] )
+								//~ echo "Pressed Other Button<br>\n";
+								send_html_show_secrets_page($tp_login_uname, $tp_login_pword, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
+							}
+						}
+						else
+						{
+							//~ echo "Not Authenticated<br>\n";
+							send_html_login_page(3);
+						}
+						exit();    
+					}
+					else
+					{
+						if ( authenticateUser($tp_login_uname, $tp_login_pword, $form, "[ ◀ OK ▶ ]","index.php") )
+						{						
+							if ( isset($_POST['save_password_button']) && isset($_POST['role_name']) && isset($_POST['user_name']) && isset($_POST['old_pass_word']) && isset($_POST['new_pass_word']) )
+							{
+								$pdo = connectDB($form, "[ ◀ OK ▶ ]","index.php");
+								$user_id = $_POST['save_password_button'];
+								$role_name = $_POST['role_name'];
+								$role_id = getRoleIdByRoleName($pdo, $role_name, $form, "[ ◀ OK ▶ ]","index.php");
+								$user_name = $_POST['user_name'];
+								$old_pass_word = $_POST['old_pass_word'];
+								$new_pass_word = $_POST['new_pass_word'];
+								
+								change_password($user_name, $old_pass_word, $new_pass_word, true);
+								
+								if ( authenticateUser("tiny", $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) // User has default pass and needs pass change
 								{
+									$user_id = 	getUserIdByUserName("tiny", $form, "[ ◀ OK ▶ ]","index.php");	send_html_change_password_page($user_id, "tiny", $GLOBALS["user_stnd_pass_word"], $search_names, $search_groups, $primar_column_order_fld, $primar_column_order_dir, $second_column_order_fld, $second_column_order_dir);
 									send_html_login_page(0);
 								}
 								else
 								{
-									send_html_show_secrets_page($tp_login_uname, $new_pass_word, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
-								}
-							}							
-						}
-						elseif (isset($_POST['cancel_password_button']))
-						{
-							//~ $user_id = htmlspecialchars($_POST['cancel_password_button'], ENT_QUOTES, 'UTF-8');
-							send_html_show_secrets_page($tp_login_uname, $tp_login_pword, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
+									if ( $old_pass_word == $GLOBALS["user_stnd_pass_word"] )
+									{
+										send_html_login_page(0);
+									}
+									else
+									{
+										send_html_show_secrets_page($tp_login_uname, $new_pass_word, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
+									}
+								}							
+							}
+							elseif (isset($_POST['cancel_password_button']))
+							{
+								//~ $user_id = htmlspecialchars($_POST['cancel_password_button'], ENT_QUOTES, 'UTF-8');
+								send_html_show_secrets_page($tp_login_uname, $tp_login_pword, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
+							}
+							else
+							{
+								//~ echo "Pressed Other Button<br>\n";
+								send_html_show_secrets_page($tp_login_uname, $tp_login_pword, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
+							}
 						}
 						else
 						{
-							//~ echo "Pressed Other Button<br>\n";
-							send_html_show_secrets_page($tp_login_uname, $tp_login_pword, $search_names, $search_groups, 'secrets.secret_name', 'ASC', 'groups.group_name', 'ASC');
+							//~ echo "Not Authenticated<br>\n";
+							send_html_login_page(3);
 						}
+						exit();    
 					}
-					else
-					{
-						//~ echo "Not Authenticated<br>\n";
-						send_html_login_page(3);
-					}
-					exit();    
 				}
 				else
 				{
@@ -6940,11 +6992,11 @@ EOF;
 		}
 		else // Defaults to web interface landing
 		{
-			if ( authenticateUser("admin", $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) // User has default pass and needs pass change
+			if ( ( authenticateUser("admin", $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) && ( ! DEMO )) // User has default pass and needs pass change
 			{
 				$user_id = 	getUserIdByUserName("admin", $form, "[ ◀ OK ▶ ]","index.php"); send_html_change_password_page($user_id, "admin", $GLOBALS["user_stnd_pass_word"], $search_names, $search_groups, $primar_column_order_fld, $primar_column_order_dir, $second_column_order_fld, $second_column_order_dir);
 			}
-			else if ( authenticateUser("tiny", $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) // User has default pass and needs pass change
+			else if ( ( authenticateUser("tiny", $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) && (! DEMO )) // User has default pass and needs pass change
 			{
 				$user_id = 	getUserIdByUserName("tiny", $form, "[ ◀ OK ▶ ]","index.php"); send_html_change_password_page($user_id, "tiny", $GLOBALS["user_stnd_pass_word"], $search_names, $search_groups, $primar_column_order_fld, $primar_column_order_dir, $second_column_order_fld, $second_column_order_dir);
 			}
