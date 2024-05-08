@@ -9,7 +9,7 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 - [Easy](#easy)
 - [Try Demo](https://www.tiny-server.com/web/share/drive/public/tinypass/index.php)
 - [Functions](#functions)
-- [More Details](#more-details)
+- [Read More](#read-more)
 - [User Licence](#user-licence)
 - [Screenshots](#screenshots)
 - [Demo Video](#demo-video)
@@ -18,18 +18,16 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 
 <!-- MDTOC -->
 
+TinyPass works with Secrets having exactly the Fields you need, support mobile devices and has many other fun features.
 
 ## Easy
 
-TinyPass is easy to install with no installation hassle, no database server, no db user & access rights or manual Paths and URLs to specify, no websetup to go through.
-TinyPass creates a single database file called "tinypass.db" in the home directory when it's not there, which also makes backup & restore super simple.
+TinyPass is easy to install, no database server, no db user and access rights or manual paths / URLs to specify.
+At first run TinyPass makes a single database file called "tinypass.db" which makes backup & restore also easy.
 
 - Copy TinyPass to a web directory
 - Configure your (Apache) Web Server
 - Browse to https://your.ip/tinypass/
-
-The great thing about TinyPass is that it works with Secrets and 100% Custom Fields that can be added, changed, rearranged, moved up and down and deleted at any time. 
-It also has a clean, non-distracting interface with a context driven menu also supporting mobile devices along with many other fun features.
 
 
 ## Functions
@@ -45,19 +43,10 @@ It also has a clean, non-distracting interface with a context driven menu also s
 - Built-in SQLite DB
 - Password Encryption
 
-## More Details
+## Read More
 
 <details>
-<summary>More details</summary>
-
-## Lala
-
-lalalala
-lalalassasas
-asdwreweew
-
-</details>
-
+<summary>Click to expand</summary>
 
 ## Description
 
@@ -114,6 +103,10 @@ Password fields are AES-256-CTR encrypted in the database with a SHA512 hash key
 ### Other
 
 TinyPass is designed with performance in mind and also supports mobile screens.
+
+</details>
+
+
 
 
 ## User Licence
