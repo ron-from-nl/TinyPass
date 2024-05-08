@@ -48,6 +48,8 @@ It also has a clean, non-distracting interface with a context driven menu also s
 <details>
 <summary>More details</summary>
 
+## More Details
+
 ## Lala
 
 lalalala
