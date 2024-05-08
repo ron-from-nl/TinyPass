@@ -7,7 +7,6 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
 - [Why](#why)
-- [Easy](#easy)
 - [Try Demo](https://www.tiny-server.com/web/share/drive/public/tinypass/index.php)
 - [Functions](#functions)
 - [Read More](#read-more)
@@ -23,13 +22,10 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 ## Why
 
 TinyPass Secrets have unlimited Custom Fields, supports mobiles and has many other fun features.
-Most Password Managers offer Secrets with Fixed Fields usually causing unused and missing fields.
+Traditional Password Managers work with Fixed Fields that often causes unused and missing fields.
 
-
-## Easy
-
-TinyPass is easy to install, no database server, no db user and access rights or manual paths / URLs to specify.
-At first run TinyPass makes a single database file called "tinypass.db" which makes backup & restore also easy.
+Installing TinyPass is also easy, no database server required or manual paths / URLs to specify.
+TinyPass simply stores a single database file "tinypass.db" making backups & restores also easy.
 
 - Copy TinyPass to a web directory
 - Configure your (Apache) Web Server
