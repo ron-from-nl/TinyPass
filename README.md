@@ -58,8 +58,7 @@ At first run TinyPass makes a single database file called "tinypass.db" which ma
 
 ### Secrets
 
-TinyPass works with "Secrets" holding any number of Fields. New Secrets start with just a Name and an optional Group.
-Then add, change or remove just the Fields you need and rearrange their order as you wish.
+New Secrets start with just a Name and an optional Group. Then add, change or remove just the Fields you need and rearrange their order as you wish.
 
 ### Fields
 
