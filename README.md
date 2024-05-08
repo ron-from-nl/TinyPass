@@ -68,38 +68,38 @@ Note - Multi-line resizable textarea	<br />
 
 ### Groups
 
-Optionally, Secrets can be members of a "Group" selected from a list. The group selection field is editable and non-existent groups are automatically added to the user's groups, making group management easy.
+Optionally, Secrets can be members of a "Group" selected from a list. The group selection field is editable and non-existent groups are automatically added to the user's groups, making group management easy.<br />
 
 ### Search
 
-Search within Secrets and Fields, optionally filtered by Group, so you can find your Secrets in an instant (SQL wildcards "_" and "%" are supported).
+Search within Secrets and Fields, optionally filtered by Group, so you can find your Secrets in an instant (SQL wildcards "_" and "%" are supported).<br />
 
 ### Sort
 
-You can sort all columns in "Show Secrets", "Show Groups" and "Show Users" in ascending and descending order. Sorting the first "Id" column can be handy when you need to remove the last CSV import.
+You can sort all columns in "Show Secrets", "Show Groups" and "Show Users" in ascending and descending order. Sorting the first "Id" column can be handy when you need to remove the last CSV import.<br />
 
 ### Select
 
-You can select multiple records in "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export. 
+You can select multiple records in "Show Secrets", "Show Groups" and "Show Users" for deletion or CSV export.<br />
 
 ### Users
 
-By default there are two users named **User: "admin"** (role: "Admin") and **User: "tiny"** (role: "User"). Admins can also add, change, or delete users.
-When an Admin deletes a user then all user-related Secrets and Groups are deleted. Admins cannot read other user Secrets and cannot delete users: "admin", "tiny".
-When a user performs a Password Change, then all Password Fields are re-encrypted. TinyPass also has a Shell interface that enables automated Password Changes.  
+By default there are two users named **User: "admin"** (role: "Admin") and **User: "tiny"** (role: "User"). Admins can also add, change, or delete users. 
+When an Admin deletes a user then all user-related Secrets and Groups are deleted. Admins cannot read other user Secrets and cannot delete users: "admin", "tiny". 
+When a user performs a Password Change, then all Password Fields are re-encrypted. TinyPass also has a Shell interface that enables automated Password Changes.<br />  
 
 ### Import / Export
 
-TinyPass supports CSV Import / Export (with automatic format recognition) and is compatible with more than 10 different password manager formats, including various browsers and other well-known formats.
-The group filter is also useful here, allowing you to export only Secrets being a member of a certain Group for instance when using Groups as names of people for whom you keep Secrets.
+TinyPass supports CSV Import / Export (with automatic format recognition) and is compatible with more than 10 different password manager formats, including various browsers and other well-known formats. 
+The group filter is also useful here, allowing you to export only Secrets being a member of a certain Group for instance when using Groups as names of people for whom you keep Secrets.<br />
 
 ### Security
 
-Password fields are AES-256-CTR encrypted in the database with a SHA512 hash key of your user password (not written anywhere), so remember your password!
+Password fields are AES-256-CTR encrypted in the database with a SHA512 hash key of your user password (not written anywhere), so remember your password!<br />
 
 ### Other
 
-TinyPass is designed with performance in mind and also supports mobile screens.
+TinyPass is designed with performance in mind and also supports mobile screens.<br />
 
 </details>
 
