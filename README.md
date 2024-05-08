@@ -45,10 +45,10 @@ It also has a clean, non-distracting interface with a context driven menu also s
 - Built-in SQLite DB
 - Password Encryption
 
+## More Details
+
 <details>
 <summary>More details</summary>
-
-## More Details
 
 ## Lala
 
