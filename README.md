@@ -72,11 +72,11 @@ Note - Multi-line resizable textarea	<br />
 
 ### Groups
 
-Optionally, Secrets can be members of a "Group" selected from a list. The group selection list is editable and non-existent groups are automatically added to the user's groups, making group management a breeze.
+Optionally, Secrets can be members of a "Group" selected from a list. The group selection field is editable and non-existent groups are automatically added to the user's groups, making group management easy.
 
 ### Search
 
-The interface has a good Search Engine that also searches deep into the Fields of your Secrets, optionally filtered by Group, so you can find your Secrets in an instant (SQL wildcards "_" and "%" are supported).
+Search within Secrets and Fields, optionally filtered by Group, so you can find your Secrets in an instant (SQL wildcards "_" and "%" are supported).
 
 ### Sort
 
