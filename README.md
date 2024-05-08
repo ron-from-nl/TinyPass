@@ -36,8 +36,6 @@ At first run TinyPass makes a single database file called "tinypass.db" which ma
 - Browse to https://your.ip/tinypass/
 
 
-## Why TinyPass
-
 ## Functions
 
 - Groups
