@@ -4,6 +4,12 @@ New on GitHub since: 1st of May 2024
 
 PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (author: [Ron de Jong](https://www.tiny-server.com/#contact))
 
+TinyPass works with Secrets that only have the Fields you need, supports mobile devices and has many other fun features.
+
+Most Password Managers (PM's) work with Fixed Fields with some Custom Fields which results in unused and missing fields.
+Some PM's let you make a new Secret from a large list of templates (with predefined fields) making things more laborious.
+TinyPass offering Secrets with an unlimited number of Custom Fields making unused and missing Fields a thing of the past.
+
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
 - [Easy](#easy)
@@ -18,7 +24,6 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 
 <!-- MDTOC -->
 
-TinyPass works with Secrets having exactly the Fields you need, support mobile devices and has many other fun features.
 
 ## Easy
 
@@ -55,13 +60,9 @@ At first run TinyPass makes a single database file called "tinypass.db" which ma
 TinyPass works with "Secrets" holding any number of Fields. New Secrets start with just a Name and an optional Group.
 Then add, change or remove just the Fields you need and rearrange their order as you wish.
 
-Traditional Password Managers work with Fixed Fields often supplemented with a limited number of Custom Fields. This often causes unused and missing fields in your Secrets.
-Fixed Field Password Managers often complicate things further offering a large selection-list of predefined Secrets (secrets with predefined fields) making things more laborious.
-TinyPass breaks with the Fixed Field tradition with a radical new design offering an unlimited number of Fields per Secret making unused and missing Fields a thing of the past.
-
 ### Fields
 
-The Field Types:
+Field Types:
 
 URL - Link that also opens a browser	<br />
 Mail - Email address (can be a Login)	<br />
@@ -105,8 +106,6 @@ Password fields are AES-256-CTR encrypted in the database with a SHA512 hash key
 TinyPass is designed with performance in mind and also supports mobile screens.
 
 </details>
-
-
 
 
 ## User Licence
