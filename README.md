@@ -23,7 +23,7 @@ PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (aut
 ## Why
 
 TinyPass has Secrets with unlimited Custom Fields, supports mobiles screens and many other fun features.
-Most Password Managers use Secret Templates with predefined Fixed Fields causing unused and missing fields.
+Most Password Managers offer Secrets with predefined Fixed Fields causing unused and missing fields.
 
 
 ## Easy
