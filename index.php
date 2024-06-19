@@ -4215,10 +4215,10 @@ EOF;
 
 				///~ Field 2 (value field)
 				echo "	<td style=\"vertical-align: text-bottom; width: auto;\" colspan=3>\n";
-					if 		( $field->field_type === 'password' )	{ echo "  <input style=\"width: 100%; border: none; color: lightgrey; font-family:Lucida Console,Liberation Mono,DejaVu Sans Mono,Courier New, monospace; background-color: transparent;\" class=\"tfield\" type=\"" . $field->field_type . "\" id=\"textfieldvalu" . $field->field_id . "\" n_ame=\"textfieldvalu" . $field->field_id . "\" value=\"". decrypt_password($tp_login_pword,$field->field_value) . "\" readonly>"; }
+					if 		( $field->field_type === 'password' )	{ echo "  <input style=\"width: 100%; border: none; color: lightgrey; font-family:Lucida Console,Liberation Mono,DejaVu Sans Mono,Courier New, monospace; background-color: transparent;\" class=\"tfield\" type=\"" . $field->field_type . "\" id=\"textfieldvalu" . $field->field_id . "\" n_ame=\"textfieldvalu" . $field->field_id . "\" title=\"Copy to clipboard\" onclick=\"copyValue('textfieldvalu" . $field->field_id . "')\" value=\"". decrypt_password($tp_login_pword,$field->field_value) . "\" readonly>"; }
 					elseif 	( $field->field_type === 'textarea' )	{ echo "  <textarea style=\"width: 100%; border: none; color: lightgrey; background-color: transparent; overflow-y: auto; resize: vertical; border: 1px solid rgba(50,50,50);\" class=\"tfield\" type=\"" . $field->field_type . "\" id=\"textfieldvalu" . $field->field_id . "\" n_ame=\"textfieldvalu" . $field->field_id . "\" readonly rows=\"". (substr_count($field->field_value, "\n" ) + 1) . "\">". $field->field_value . "</textarea></div>"; }
-					elseif 	( $field->field_type === 'url' )		{ echo "  <input style=\"width: 100%; border: none; color: lightgrey; background-color: transparent;\" class=\"tfield\" type=\"" . $field->field_type . "\" id=\"textfieldvalu" . $field->field_id . "\" n_ame=\"textfieldvalu" . $field->field_id . "\" value=\"". $field->field_value . "\" readonly>"; }
-					else 											{ echo "  <input style=\"width: 100%; border: none; color: lightgrey; background-color: transparent;\" class=\"tfield\" type=\"" . $field->field_type . "\" id=\"textfieldvalu" . $field->field_id . "\" n_ame=\"textfieldvalu" . $field->field_id . "\" value=\"". $field->field_value . "\" readonly>"; }
+					elseif 	( $field->field_type === 'url' )		{ echo "  <input style=\"width: 100%; border: none; color: lightgrey; background-color: transparent;\" class=\"tfield\" type=\"" . $field->field_type . "\" id=\"textfieldvalu" . $field->field_id . "\" n_ame=\"textfieldvalu" . $field->field_id . "\" title=\"Open URL\" onclick=\"openURL('" . $field->field_value . "')\" value=\"". $field->field_value . "\" readonly>"; }
+					else 											{ echo "  <input style=\"width: 100%; border: none; color: lightgrey; background-color: transparent;\" class=\"tfield\" type=\"" . $field->field_type . "\" id=\"textfieldvalu" . $field->field_id . "\" n_ame=\"textfieldvalu" . $field->field_id . "\" title=\"Copy to clipboard\" onclick=\"copyValue('textfieldvalu" . $field->field_id . "')\" value=\"". $field->field_value . "\" readonly>"; }
 				echo "  </td>";																
 
 
@@ -4231,7 +4231,7 @@ EOF;
 
 				///~ Field 4 (copy value function column)
 				echo "	<td style=\"text-align: center; vertical-align: text-bottom; width: 3rem;\">";
-					if ( $field->field_type === 'url' )		{ echo "<a href=\"$field->field_value\" target=\"_blanc\"><input style=\"border: none; text-align: center; transparent; width: 3rem;\" class=\"dark_grey_white_button\" type=\"button\" id=\"openfieldvalu" . $field->field_id . "\" n_ame=\"openfieldvalu" . $field->field_id . "\" title=\"Open URL\" o__nclick=\"openURL('" . $field->field_value . "')\" value=\"&#128279;\"></a>"; }
+					if ( $field->field_type === 'url' )		{ echo "<a href=\"$field->field_value\" target=\"_blanc\"><input style=\"border: none; text-align: center; transparent; width: 3rem;\" class=\"dark_grey_white_button\" type=\"button\" id=\"openfieldvalu" . $field->field_id . "\" n_ame=\"openfieldvalu" . $field->field_id . "\" title=\"Open URL\" onclick=\"openURL('" . $field->field_value . "')\" value=\"&#128279;\"></a>"; }
 					else									{ echo "<input style=\"text-align: center; border: none; text-align: center; transparent; width: 3rem;\" class=\"dark_grey_white_button\" type=\"button\" id=\"showfieldvalu" . $field->field_id . "\" n_ame=\"showfieldvalu" . $field->field_id . "\" title=\"Copy to clipboard\" onclick=\"copyValue('textfieldvalu" . $field->field_id . "')\" value=\"&#128196;\">"; }
 				
 				
@@ -6992,6 +6992,7 @@ EOF;
 		}
 		else // Defaults to web interface landing
 		{
+			$form = "change_password_form"; $search_names = $search_groups = $primar_column_order_fld = $primar_column_order_dir = $second_column_order_fld = $second_column_order_dir = "";
 			if ( ( authenticateUser("admin", $GLOBALS["user_stnd_pass_word"], $form, "[ ◀ OK ▶ ]", "index.php") ) && ( ! DEMO )) // User has default pass and needs pass change
 			{
 				$user_id = 	getUserIdByUserName("admin", $form, "[ ◀ OK ▶ ]","index.php"); send_html_change_password_page($user_id, "admin", $GLOBALS["user_stnd_pass_word"], $search_names, $search_groups, $primar_column_order_fld, $primar_column_order_dir, $second_column_order_fld, $second_column_order_dir);
