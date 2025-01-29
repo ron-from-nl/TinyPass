@@ -2956,7 +2956,7 @@ EOF;
 			echo "</form>";
 			echo "<script type='text/javascript'>window.onload = function() { document.getElementById(\"tp_login_uname\").focus(); }</script>";
 
-			echo "<div style=\"position: fixed; bottom: 10%; left: 50%; transform: translate(-50%,-50%); width:98%; padding: 0px 10px 0px 10px;\" class=\"e\" >";
+			echo "<div style=\"position: fixed; bottom: 5%; left: 50%; transform: translate(-50%,-50%); width:98%; padding: 0px 10px 0px 10px;\" class=\"e\" >";
 			echo "		<table style=\"width: 100%; \" border=0>";
 			echo "		<tbody style=\"color: grey;\">";
 			echo "			<tr><td style=\"text-align: center; font-size: 2.15rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.com/\">Get a Tiny Server</a></td></tr>";
