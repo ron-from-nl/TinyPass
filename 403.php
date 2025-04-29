@@ -238,7 +238,7 @@
                                     echo "<hr style=\"border-top: 1px solid grey; width: 80%;\">";
                                     echo "<h4>&bull; <a style=\"color: white;\" href=\"http://${prvip4}/setup/\"   target=\"_blank\">Connect</a> from your local network</h4>";
                                     echo "<hr style=\"border-top: 1px solid grey; width: 80%;\">";
-                                    echo "<h4>&bull; <a style=\"color: white;\" href=\"https://www.tiny-server.com/desktop/#os-apps\">Use a WireGuard VPN Connection</a><br>";
+                                    echo "<h4>&bull; <a style=\"color: white;\" href=\"https://www.tiny-server.org/desktop/#os-apps\">Use a WireGuard VPN Connection</a><br>";
                                                                     echo " and then click this <a style=\"color: white;\" href=\"http://${prvip4}/setup/\"   target=\"_blank\">IPv4</a>";
                                     if ( strlen($intip6) > 0 ) {    echo " or <a style=\"color: white;\" href=\"http://[${intip6}]/setup/\" target=\"_blank\">IPv6</a>"; } echo " link</h4>";
                                     echo "<hr style=\"border-top: 1px solid grey; width: 80%;\">";

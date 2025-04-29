@@ -1,6 +1,6 @@
     <?php	 
 
-		//~ URL:			https://www.tiny-server.com/
+		//~ URL:			https://www.tiny-server.org/
 		//~ Email:			Ron de Jong <ronuitzaandam@gmail.com>
 		//~ Author:			Tiny Server, Ron de Jong, The Netherlands
 
@@ -37,7 +37,7 @@
 
 		$tiny_debug = 0;
 		
-        $supplier_domain = "tiny-server.com";
+        $supplier_domain = "tiny-server.org";
         $customer_domain = exec("awk -F\".\" 'END { print $(NF-1)\".\"\$NF}' /etc/mailname");
         $web_desktpdomlnk = "https://${supplier_domain}/desktop/";
 
@@ -66,9 +66,9 @@
 		$default_bg = "img/default_bg.jpg";
 		        
 		//~ REQUEST_SCHEME = 	"https"
-		//~ SCRIPT_URI = 		"https://www.tiny-server.com/tiny/pass/index.php")    
-        //~ HTTP_HOST = 		"www.tiny-server.com"
-        //~ SERVER_NAME = 		"www.tiny-server.com"
+		//~ SCRIPT_URI = 		"https://www.tiny-server.org/tiny/pass/index.php")    
+        //~ HTTP_HOST = 		"www.tiny-server.org"
+        //~ SERVER_NAME = 		"www.tiny-server.org"
 
         //~ define('TINY_PASS_URI', " . $_SERVER['SCRIPT_URI']. ");
         //~ define('TINY_PASS_URI', $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST']. "/");
@@ -2616,7 +2616,7 @@ EOF;
 				//~ Landing (no form)
 				connectDB("landing","[ ◀ OK ▶ ]","index.php"); // Makes sure DB gets created at first landing
 				echo "<body style=\"background-color: #050505; \">";
-				//~ echo "<div style=\"text-align: center; position:fixed; bottom:0; left:45%; z-index: 1000;\"><p style=\"text-align: center; color: lightgrey; \"><a href=\"http://tiny-server.com/\">Tiny Server<BR>Hosting at Home</a></p></div>";
+				//~ echo "<div style=\"text-align: center; position:fixed; bottom:0; left:45%; z-index: 1000;\"><p style=\"text-align: center; color: lightgrey; \"><a href=\"http://tiny-server.org/\">Tiny Server<BR>Hosting at Home</a></p></div>";
         } // send_html_header()
 
 //~ ----------------------------------------------------------------------------
@@ -2959,8 +2959,8 @@ EOF;
 			echo "<div style=\"position: fixed; bottom: 5%; left: 50%; transform: translate(-50%,-50%); width:98%; padding: 0px 10px 0px 10px;\" class=\"e\" >";
 			echo "		<table style=\"width: 100%; \" border=0>";
 			echo "		<tbody style=\"color: grey;\">";
-			echo "			<tr><td style=\"text-align: center; font-size: 2.15rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.com/\">Get a Tiny Server</a></td></tr>";
-			echo "			<tr><td style=\"text-align: center; font-size: 1.10rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.com/\">Free your Internet Imprisonment</a></td></tr>";
+			echo "			<tr><td style=\"text-align: center; font-size: 2.15rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.org/\">Get a Tiny Server</a></td></tr>";
+			echo "			<tr><td style=\"text-align: center; font-size: 1.10rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.org/\">Free your Internet Imprisonment</a></td></tr>";
 			echo "			<tr><td >&nbsp</td></tr>";
 			echo "		</tbody>";
 			echo "	</table>";
@@ -3832,7 +3832,7 @@ EOF;
 			echo "			<input type=\"hidden\" id=\"second_column_order_fld\" name=\"second_column_order_fld\" value=\"$second_column_order_fld\"/>";
 			echo "			<input type=\"hidden\" id=\"second_column_order_dir\" name=\"second_column_order_dir\" value=\"$second_column_order_dir\"/>";
 
-			echo "			<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddSecretTable\" border=0>";
+			echo "			<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddSecretTable\" border=0>";
 
 			echo "				<tbody id=\"AddSecretTableBody\" style=\"color: black; \">";
 			echo "					<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=10>&nbsp</td></tr>";
@@ -3953,7 +3953,7 @@ EOF;
 			echo "			<input type=\"hidden\" id=\"second_column_order_fld\" name=\"second_column_order_fld\" value=\"$second_column_order_fld\"/>";
 			echo "			<input type=\"hidden\" id=\"second_column_order_dir\" name=\"second_column_order_dir\" value=\"$second_column_order_dir\"/>";
 
-			echo "			<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddGroupTable\" border=0>";
+			echo "			<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddGroupTable\" border=0>";
 
 			echo "				<tbody id=\"AddGroupTableBody\" style=\"color: black; \">";
 			echo "					<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=10>&nbsp</td></tr>";
@@ -4046,7 +4046,7 @@ EOF;
 			echo "			<input type=\"hidden\" id=\"second_column_order_fld\" name=\"second_column_order_fld\" value=\"$second_column_order_fld\"/>";
 			echo "			<input type=\"hidden\" id=\"second_column_order_dir\" name=\"second_column_order_dir\" value=\"$second_column_order_dir\"/>";
 
-			echo "			<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddUserTable\" border=0>";
+			echo "			<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddUserTable\" border=0>";
 
 			echo "				<tbody id=\"AddUserTableBody\" style=\"color: black; \">";			
 			echo "					<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=6>&nbsp</td></tr>";
@@ -4176,7 +4176,7 @@ EOF;
 
 			//~ Print Name & Group  Fields
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewSecretTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewSecretTable\" border=0>";
 
 			echo "		<tbody id=\"ViewSecretTableBody\" style=\"color: black; border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50);\">";
 			echo "			<tr style=\"height: 1rem; b_ackground-color: rgba(0, 0, 0, 0.5);\"><td colspan=8>&nbsp</td></tr>";			
@@ -4329,7 +4329,7 @@ EOF;
 
 			//~ Print Group Field
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewGroupTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewGroupTable\" border=0>";
 
 			echo "		<tbody id=\"ViewGroupTableBody\" style=\"color: black;\">";
 			echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; b_ackground-color: rgba(0, 0, 0, 0.5);\"><td colspan=9>&nbsp</td></tr>";			
@@ -4421,7 +4421,7 @@ EOF;
 
 			//~ Print User Field
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewUserTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewUserTable\" border=0>";
 
 			echo "				<tbody id=\"AddUserTableBody\" style=\"color: black; \">";			
 			echo "					<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; b_ackground-color: rgba(0, 0, 0, 0.5);\"><td colspan=6>&nbsp</td></tr>";
@@ -4560,7 +4560,7 @@ EOF;
 
 			//~ Print Name &Group Search Fields
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddSecretTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddSecretTable\" border=0>";
 
 			echo "		<tbody id=\"AddSecretTableBody\" style=\"color: black;\">";
 			echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=10>&nbsp</td></tr>";
@@ -4705,7 +4705,7 @@ EOF;
 
 			//~ Print Name &Group Search Fields
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"EditGroupTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"EditGroupTable\" border=0>";
 
 			echo "		<tbody id=\"EditGroupTableBody\" style=\"color: black;\">";
 			echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=10>&nbsp</td></tr>";
@@ -4804,7 +4804,7 @@ EOF;
 
 			//~ Print User Field
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewUserTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"ViewUserTable\" border=0>";
 
 			echo "				<tbody id=\"AddUserTableBody\" style=\"color: black; \">";			
 			echo "					<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=6>&nbsp</td></tr>";
@@ -4982,7 +4982,7 @@ EOF;
 
 			//~ Print Name &Group Search Fields
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"EditUserTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"EditUserTable\" border=0>";
 
 			echo "				<tbody id=\"AddUserTableBody\" style=\"color: black; \">";			
 			echo "					<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=6>&nbsp</td></tr>";
@@ -5144,7 +5144,7 @@ EOF;
 			echo "	<input type=\"hidden\" id=\"second_column_order_fld\" name=\"second_column_order_fld\" value=\"$second_column_order_fld\"/>";
 			echo "	<input type=\"hidden\" id=\"second_column_order_dir\" name=\"second_column_order_dir\" value=\"$second_column_order_dir\"/>";
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddSecretTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"AddSecretTable\" border=0>";
 
 			echo "		<tbody id=\"AddSecretTableBody\" style=\"color: black;\">";
 			echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=10>&nbsp</td></tr>";
@@ -5286,7 +5286,7 @@ EOF;
 			echo "	<input type=\"hidden\" id=\"second_column_order_fld\" name=\"second_column_order_fld\" value=\"$second_column_order_fld\"/>";
 			echo "	<input type=\"hidden\" id=\"second_column_order_dir\" name=\"second_column_order_dir\" value=\"$second_column_order_dir\"/>";
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"CopyGroupTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"CopyGroupTable\" border=0>";
 
 			echo "		<tbody id=\"CopyGroupTableBody\" style=\"color: black;\">";
 			echo "			<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=10>&nbsp</td></tr>";
@@ -5388,7 +5388,7 @@ EOF;
 
 			//~ Print Name &Group Search Fields
 
-			echo "	<table style=\"position: fixed; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"CopyUserTable\" border=0>";
+			echo "	<table style=\"position: absolute; left: 0rem; top: 14rem; p_adding-bottom: 7rem; width: 99%;\" id=\"CopyUserTable\" border=0>";
 
 			echo "				<tbody id=\"CopyUserTableBody\" style=\"color: black; \">";			
 			echo "					<tr style=\"border-left: 1px solid rgba(50,50,50); border-top: 1px solid rgba(50,50,50); border-right: 1px solid rgba(50,50,50); height: 1rem; background-color: rgba(0, 0, 0, 0.5);\"><td colspan=6>&nbsp</td></tr>";

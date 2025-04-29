@@ -2,12 +2,12 @@
 
 New on GitHub since: 1st of May 2024
 
-PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (author: [Ron de Jong](https://www.tiny-server.com/#contact))
+PHP Password Manager with 100% Custom Fields and a built-in SQLite Database (author: [Ron de Jong](https://www.tiny-server.org/#contact))
 
 <!-- MDTOC maxdepth:2 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
 
 - [Why](#why)
-- [Try Demo](https://www.tiny-server.com/web/share/drive/public/tinypass/index.php)
+- [Try Demo](https://www.tiny-server.org/web/share/drive/public/tinypass/index.php)
 - [Functions](#functions)
 - [Read More](#read-more)
 - [User Licence](#user-licence)
@@ -135,7 +135,7 @@ Login                                                           |  Show Secrets 
 
 ## Demo Video
 
-[![Watch the video](/img/01-tinypass.png)](https://www.tiny-server.com/desktop/video/07-tinypass-manager.m4v)
+[![Watch the video](/img/01-tinypass.png)](https://www.tiny-server.org/desktop/video/07-tinypass-manager.m4v)
 
 
 ## Requirements
