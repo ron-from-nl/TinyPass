@@ -1622,12 +1622,39 @@ ORDER BY secrets.secret_name ASC;
 
 						function clearClipboard()
 						{
+                            Notification.requestPermission().then(function(permission)
+                            {
+                              if (permission === "granted") {
+                                new Notification("Clipboard cleared !", {
+                                  //~ body: "Value cleared from Clipboard",
+                                  icon: "img/cleared.png",
+                                  badge: "img/cleared.png",
+                                  tag: "clearedclipboard",
+                                  requireInteraction: false
+                                });
+                              }
+                            });
+
 							navigator.clipboard.writeText("");
 							set_timeout = null;
 						}
 
 						function copyValue(id)
-						{
+						{     
+                            Notification.requestPermission().then(function(permission)
+                            {
+                              if (permission === "granted") {
+                                new Notification("Copied to clipboard",
+                                {
+                                  body: "will be cleared in 10 sec",
+                                  icon: "img/copied.png",
+                                  badge: "img/copied.png",
+                                  tag: "copiedclipboard",
+                                  requireInteraction: false
+                                });
+                              }
+                            });
+                            
 							if (set_timeout !== 'undefined') { clearTimeout(set_timeout); }
 							var node = document.getElementById(id);				
 							navigator.clipboard.writeText(node.value);
