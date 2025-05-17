@@ -2917,10 +2917,11 @@ EOF;
 			echo "		<table style=\"width: 100%; \" id=\"LoginElement\" border=0>";
 
 			echo "		<tbody style=\"color: black;\">";
+			echo "			<tr><td >&nbsp</td></tr>";
 			echo "			<tr><td style=\"text-align: center; text-transform: uppercase; font-size: 2.7rem; color: white;\" colspan=1>Tiny Pass</td></tr>";
 			echo "			<tr><td style=\"text-align: center; text-transform: uppercase; font-size: 1.24rem; color: white;\" colspan=1>Password Manager</td></tr>";
 			echo "			<tr><td style=\"text-align: center; text-transform: uppercase; font-size: 1.24rem; color: white;\" colspan=1><button title=\"\" style=\"line-height: 1rem; padding: 0px; border: none; background-color: transparent; font-size: 1.24rem; color: white;\" class=\"dark_grey_white_button\" type=\"button\" name=\"\" value=\"\" >v" . TINY_PASS_VERSION_DESC . "</button></td></tr>";
-			echo "			<tr><td >&nbsp</td></tr>";
+			//~ echo "			<tr><td >&nbsp</td></tr>";
 			echo "			<tr><td style=\"text-align: center;\"><img src=\"img/tinypass-web.png\" alt=\"Avatar\" ></td></tr>										";
 			echo "			<tr><td >&nbsp</td></tr>";
 
@@ -2968,11 +2969,11 @@ EOF;
 
 			if ( DEMO )
 			{
-				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9);\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Login Demo</button>";
+				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9); margin: 0rem 0rem 2rem 0rem;\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Login Demo</button>";
 			}
 			else
 			{
-				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9);\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Login</button>";
+				echo "			<button style=\"box-shadow: none; border: thin solid rgba(200, 200, 200, 0.9); margin: 0rem 0rem 2rem 0rem;\" class=\"dark_grey_white_button\" type=\"submit\" value=\"submit_button\">Login</button>";
 			} 
 
 			echo "			</td>";
@@ -2980,19 +2981,14 @@ EOF;
 			echo "		</tfoot>";
 			echo "	</table>";
 			echo "	";
-			echo "</form>";
-			echo "<script type='text/javascript'>window.onload = function() { document.getElementById(\"tp_login_uname\").focus(); }</script>";
-
-			echo "<div style=\"position: fixed; bottom: 5%; left: 50%; transform: translate(-50%,-50%); width:98%; padding: 0px 10px 0px 10px;\" class=\"e\" >";
 			echo "		<table style=\"width: 100%; \" border=0>";
 			echo "		<tbody style=\"color: grey;\">";
-			echo "			<tr><td style=\"text-align: center; font-size: 2.15rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.org/\">Get a Tiny Server</a></td></tr>";
-			echo "			<tr><td style=\"text-align: center; font-size: 1.10rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.org/\">Free your Internet Imprisonment</a></td></tr>";
+			echo "			<tr><td style=\"text-align: center; font-size: 2.5rem; \" colspan=1><a style=\"color: dimgrey;\" href=\"http://tiny-server.org/\">Get a Tiny Server</a></td></tr>";
+			echo "			<tr><td style=\"text-align: center; font-size: 1.65rem; \" colspan=1><a style=\"color: dimgrey; text-decoration: underline;\" href=\"http://tiny-server.org/\">Break Free</a> from <a style=\"color: dimgrey; text-decoration: underline;\" href=\"https://en.wikipedia.org/wiki/Big_Tech\">Big Tech</a></td></tr>";
 			echo "			<tr><td >&nbsp</td></tr>";
 			echo "		</tbody>";
-			echo "	</table>";
-			echo "	";
-			echo "</div>";
+			echo "</form>";
+			echo "<script type='text/javascript'>window.onload = function() { document.getElementById(\"tp_login_uname\").focus(); }</script>";
 
 			echo "</section>";
 			echo "</div>";
